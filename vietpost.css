@@ -3,7 +3,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
+:root {
     --blue: #1c75bc;
     --indigo: #6610f2;
     --purple: #f0f;
@@ -30,8 +30,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1260px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 *,
@@ -68,4 +68,222 @@ body {
     color: #212529;
     text-align: left;
     background-color: #e2e2e2;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 94px;
+    background-color: #eaeced;
+    z-index: 1030
+}
+
+.header .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: #154476;
+    pointer-events: none
+}
+
+.header .header-bg:after {
+    content: " ";
+    position: absolute;
+    top: 38px;
+    right: 0;
+    display: block;
+    width: 50%;
+    height: 54px;
+    background-color: #eaeced
+}
+
+.header .top-button-container {
+    position: absolute;
+    top: 0;
+    left: 194px;
+    right: 0;
+    height: 38px;
+    padding: 4px
+}
+
+.header .top-button-container .btn,.header .top-button-container .link-btn {
+    font-size: .875rem
+}
+
+.header .top-button-container .transport-registration-btn {
+    display: block
+}
+
+.header .top-button-container .header--top-links-dropdown {
+    display: inline-block;
+    height: 30px;
+    margin-left: 15px
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-toggle {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-toggle:hover {
+    color: #f26b30
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-menu {
+    background: #154476;
+    padding: 0
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-menu a {
+    line-height: 24px
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-item {
+    color: #fff;
+    border-top: 1px solid hsla(0,0%,100%,.4)
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-item .header--top-links-icon {
+    margin-right: 10px;
+    height: 14px;
+    width: 14px;
+    fill: #fff
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-item:hover {
+    background: #eaeced;
+    color: #f26b30
+}
+
+.header .top-button-container .header--top-links-dropdown .dropdown-item:hover .header--top-links-icon {
+    fill: #f26b30
+}
+
+.header .hot-button-container {
+    position: absolute;
+    top: 38px;
+    left: 165px;
+    right: 0;
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: #eaeced
+}
+
+.header .hot-button-container:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 18px;
+    border-top: 18px solid #154476;
+    border-right: 30px solid transparent
+}
+
+.header .hot-button-container .btn-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .875rem;
+    color: #212529
+}
+
+.header .hot-button-container .btn-icon svg {
+    width: 20px;
+    height: 20px
+}
+
+.header .hot-button-container .btn-icon-order-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .875rem;
+    color: #212529
+}
+
+.header .hot-button-container .btn-icon-order-create svg {
+    width: 20px;
+    height: 20px
+}
+
+.header .navbar {
+    padding: 0;
+    position: relative
+}
+
+.header .navbar .nav-item {
+    border-top: 1px solid #fff
+}
+
+.header .navbar .nav-item:last-child {
+    border-bottom: 1px solid #fff
+}
+
+.header .navbar .nav-item>.nav-link {
+    color: #212529;
+    padding: 15px 20px
+}
+
+.header .navbar .nav-item>.nav-link.active {
+    background: #1c75bc;
+    color: #fff
+}
+
+.header .navbar .nav-item>.nav-link:hover {
+    color: #f26b30
+}
+
+.header .navbar .nav-item.dropdown .dropdown-toggle:after {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+    border-top: .5em solid #f26b30;
+    border-right: .5em solid transparent;
+    border-bottom: 0;
+    border-left: .5em solid transparent;
+    vertical-align: .15em
+}
+
+.header .navbar .nav-item.dropdown .dropdown-menu {
+    border: none
+}
+
+.header .navbar .nav-item.dropdown .dropdown-item {
+    padding: 10px 20px
+}
+
+.header .navbar-brand {
+    position: relative;
+    height: 56px;
+    width: 165px;
+    padding: 10px;
+    margin-right: 0
+}
+
+.header .navbar-brand img {
+    display: block;
+    height: 36px;
+    width: auto;
+    max-width: 100%
+}
+
+
+img {
+    border-style: none
+}
+
+img,
+svg {
+    vertical-align: middle
+}
+
+svg {
+    overflow: hidden
 }
