@@ -331,6 +331,285 @@ a:hover {
     background-color: #eaeced
 }
 
+@media(max-width: 1259.98px) {
+    .header .nav-container {
+        padding:0;
+        max-width: unset
+    }
+
+    .header .navbar-nav {
+        min-height: calc(100vh - 94px)
+    }
+}
+
+@media(min-width: 1260px) {
+    .header {
+        height:unset
+    }
+
+    .header .header-bg {
+        height: 70px
+    }
+
+    .header .header-bg:after {
+        height: 44px
+    }
+
+    .header .top-button-container {
+        left: 264px;
+        padding: 4px 0
+    }
+
+    .header .top-button-container .link-btn {
+        color: #fff;
+        padding: 5px 20px
+    }
+
+    .header .top-button-container .link-btn:hover {
+        color: #f26b30
+    }
+
+    .header .top-button-container .header--top-links-dropdown .dropdown-toggle {
+        line-height: 20px
+    }
+
+    .header .hot-button-container {
+        top: 38px;
+        left: unset;
+        height: 44px;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .header .hot-button-container:before {
+        display: none
+    }
+
+    .header .hot-button-container .btn-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .header .hot-button-container .btn-icon svg {
+        margin-right: 10px
+    }
+
+    .header .hot-button-container .btn-icon-order-create {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .header .hot-button-container .btn-icon-order-create svg {
+        margin-right: 10px
+    }
+
+    .header .navbar-brand {
+        display: block;
+        align-self: start;
+        width: 160px;
+        height: 70px;
+        padding: 15px 0
+    }
+
+    .header .navbar-brand img {
+        height: 40px
+    }
+
+    .header .sidebar-toggle {
+        display: none
+    }
+
+    .header .navbar-collapse {
+        position: relative;
+        margin-left: 100px
+    }
+
+    .header .navbar-collapse:before {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: -64px;
+        width: 64px;
+        height: 32px;
+        background: #154476;
+        border-bottom: 32px solid #eaeced;
+        border-left: 64px solid transparent
+    }
+
+    .header .navbar-nav {
+        display: flex
+    }
+
+    .header .navbar-nav .nav-item {
+        border: none
+    }
+
+    .header .navbar-nav .nav-item>.nav-link {
+        position: relative;
+        height: 44px;
+        padding: 10px 30px
+    }
+
+    .header .navbar-nav .nav-item>.nav-link>svg {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 2px
+    }
+
+    .header .navbar-nav .nav-item>.nav-link.active {
+        background: none;
+        color: #212529
+    }
+
+    .header .navbar-nav .nav-item>.nav-link.active:after {
+        content: " ";
+        position: absolute;
+        display: block;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #f26b30
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-toggle {
+        position: relative;
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        color: #212529;
+        font-weight: 400;
+        font-size: 1rem
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-toggle:after {
+        position: unset;
+        margin-left: 5px
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-toggle:hover {
+        color: #f26b30
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-toggle:focus {
+        outline: none;
+        color: #f26b30
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-toggle:focus:before {
+        border: 1px dotted;
+        border-radius: 3px;
+        content: "";
+        display: block;
+        height: calc(100% - 2px);
+        left: 1px;
+        pointer-events: none;
+        position: absolute;
+        top: 1px;
+        width: calc(100% - 2px)
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-menu {
+        margin-top: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background-color: #154476;
+        color: #fff
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-item {
+        color: #fff;
+        padding: 10px 20px;
+        border-top: 1px solid hsla(0,0%,100%,.4)
+    }
+
+    .header .navbar-nav .nav-item.dropdown .dropdown-item:hover {
+        color: #f26b30
+    }
+
+    .header .hot-button-container .btn-icon-order-create {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header .top-button-container .transport-registration-btn {
+        display:none
+    }
+
+    .header .btn-icon span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .575rem;
+        color: #212529
+    }
+
+    .header .btn-icon span svg {
+        width: 20px;
+        height: 20px
+    }
+
+    .header .btn-icon-order-create span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .575rem;
+        color: #212529
+    }
+
+    .header .btn-icon-order-create span svg {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header .hot-button-container .btn-icon span {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .575rem;
+        color: #212529
+    }
+
+    .header .hot-button-container .btn-icon span svg {
+        width: 20px;
+        height: 20px
+    }
+
+    .header .hot-button-container .btn-icon-order-create span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .575rem;
+        color: #212529
+    }
+
+    .header .hot-button-container .btn-icon-order-create span svg {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .header .navbar-brand {
+        width:120px
+    }
+
+    .header .top-button-container {
+        left: 149px
+    }
+
+    .header .hot-button-container {
+        left: 120px
+    }
+}
+
 .position-relative {
     position: relative !important
 }
@@ -389,38 +668,38 @@ svg {
     display: block !important
 }
 
-.home-top-banner-section {
-    display: none!important;
+.home-top-banner-section .slider-area .slick-arrow {
+    display: none !important;
     width: 28px;
     height: 28px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
 
-.home-top-banner-section:hover {
+.home-top-banner-section .slider-area .slick-arrow:hover {
     width: 50px;
     height: 50px
 }
 
-.home-top-banner-section {
+.home-top-banner-section .slider-area .slick-arrow.slick-next {
     right: 5px
 }
 
-.home-top-banner-section {
+.home-top-banner-section .slider-area .slick-arrow.slick-prev {
     left: 5px
 }
 
-.home-top-banner-section {
-    display: none!important;
+.home-top-banner-section .slider-area .slick-dots {
+    display: none !important;
     bottom: 20px
 }
 
-.home-top-banner-section{
+.home-top-banner-section .slider-area .slick-dots li {
     width: 14px;
     height: 14px
 }
 
-.home-top-banner-section {
+.home-top-banner-section .slider-area .slick-dots button {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -428,11 +707,11 @@ svg {
     border-radius: 50%
 }
 
-.home-top-banner-section{
+.home-top-banner-section .slider-area .slick-dots button:before {
     content: none
 }
 
-.home-top-banner-section {
+.home-top-banner-section .slider-area .slick-dots li.slick-active button:before {
     content: "";
     position: absolute;
     top: 3px;
@@ -443,7 +722,7 @@ svg {
     border-radius: 50%
 }
 
-.home-top-banner-section{
+.home-top-banner-section .overlay-area {
     position: absolute;
     top: 50%;
     width: 80%;
@@ -453,18 +732,18 @@ svg {
     transform: translateY(-50%)
 }
 
-.home-top-banner-section {
+.home-top-banner-section .overlay-area .heading {
     font-size: 30px
 }
 
-.home-top-banner-section{
+.home-top-banner-section .overlay-area .title {
     font-size: 1.125rem
 }
 
-.home-top-banner-section {
+.home-top-banner-section .overlay-area .sub {
     font-size: .875rem
 }
 
-.home-top-banner-section {
+.home-top-banner-section .overlay-area .tracking input {
     height: 51px
 }
