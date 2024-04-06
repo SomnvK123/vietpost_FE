@@ -31,7 +31,7 @@ const Footer = () => {
                                         alt="" />
                                     <span>Vận chuyển Việt - Úc</span>
                                 </a>
-                            </li>S
+                            </li>
                             <li>
                                 <a class="gf-link" href="#">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
@@ -100,7 +100,7 @@ const Footer = () => {
                             <p>
                                 Email:
                                 <a href="#" class="__cf_email__"
-                                    data-cfemail="721d1c1e1b1c1732041b1706021d01065c111d1f5c1307">essg@gmail.com</a>
+                                    data-cfemail="721d1c1e1b1c1732041b1706021d01065c111d1f5c1307">online@vietpost.com.au</a>
                             </p>
                             <p>8am to 6pm</p>
                             <p>7 Days a Week</p>
