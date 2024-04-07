@@ -528,6 +528,250 @@ const HomePage = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div class="home-delivery-section">
+                                <div class="anchor" id="how-it-works"></div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1
+                                                class="text-bold text-primary text-uppercase text-center font-size-x-large font-size-lg-xx-large my-5">
+                                                GIAO HÀNG TIẾT KIỆM &amp;THÔNG MINH</h1>
+                                        </div>
+                                    </div>
+                                    <div class="row pl-3">
+                                        <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
+                                            <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
+                                                <div class="image">
+                                                    <img src="https://vietpost.com.au/_next/static/global-aa53b2fc3cdf21a31acd48787549c44f.svg"
+                                                        alt="" />
+                                                </div>
+                                                <div class="text-bold mt-3">Nhiều điểm gửi hàng</div>
+                                                <div class="mt-3">Công ty có hệ thống đại lý gom hàng ở tất cả các tiểu bang của Úc.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
+                                            <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
+                                                <div class="image">
+                                                    <img src="https://vietpost.com.au/_next/static/cost-13d0121319ef94ccabca06dc636fd848.svg"
+                                                        alt="" />
+                                                </div>
+                                                <div class="text-bold mt-3">Cước phí cạnh tranh</div>
+                                                <div class="mt-3">Vận chuyển bằng máy bay chuyên dụng, kết hợp mạng lưới vận chuyển
+                                                    từ các đối tác lớn giúp Vietpost cung cấp dịch vụ vận chuyển nhanh với giá cước
+                                                    cạnh tranh.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
+                                            <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
+                                                <div class="image">
+                                                    <img src="https://vietpost.com.au/_next/static/payment-248583dfc45304c823157e186f4f8300.svg"
+                                                        alt="" />
+                                                </div>
+                                                <div class="text-bold mt-3">Thanh toán an toàn, linh hoạt</div>
+                                                <div class="mt-3">Đa dạng các phương thức thanh toán: chuyển khoản, visa, trực
+                                                    tiếp... giúp khách hàng có thêm nhiều lựa chọn.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
+                                            <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
+                                                <div class="image">
+                                                    <img src="https://vietpost.com.au/_next/static/tracking-18c8c3e5b6d311d85f1d0dd595b73738.svg"
+                                                        alt="" />
+                                                </div>
+                                                <div class="text-bold mt-3">Kiểm soát hành trình vận đơn</div>
+                                                <div class="mt-3">Thông tin đến khách hàng hành trình của vận đơn tại từng trạm
+                                                    trung chuyển</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-send-process-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1
+                                                class="text-bold text-primary text-uppercase text-center font-size-x-large font-size-lg-xx-large mt-5">
+                                                QUY TRÌNH GỬI HÀNG</h1>
+                                            <div class="text-bold text-uppercase text-center font-size-large mt-3 mb-5">ÁP DỤNG HÀNG
+                                                GỬI TỪ ÚC VỀ VIỆT NAM</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 px-0">
+                                            <div class="d-flex flex-column flex-lg-row pl-3 mb-2">
+                                                <div class="send-process-item-wrapper pr-3 mb-3 d-flex align-items-stretch">
+                                                    <div class="bg-white flex-grow-1 flex-shrink-1">
+                                                        <div class="number bg-primary">
+                                                            <div class="text-bold text-center text-white font-size-large">1</div>
+                                                        </div>
+                                                        <div class="send-process-item px-3 pb-3">
+                                                            <div class="image text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/logon-11b32ac084a6dbd2cf42c3e673b28edb.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="sign text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/multiply-581c8ebba42ea0be11135f66afe59cc3.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="text-bold mt-3">Đăng ký tài khoản</div>
+                                                            <div class="mt-3">
+                                                                <div class="html-content ql-editor html-content--block">
+                                                                    <p>
+                                                                        <span style="color: rgb(33, 37, 41); font-size: 14px;">Quý
+                                                                            khách cần đăng ký một tài khoản online trên
+                                                                            website trước khi thực hiện tạo vận đơn</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-3 text-center">
+                                                                <a class="btn btn-secondary text-bold text-uppercase py-2"
+                                                                    href="#">Đăng ký tài khoản</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="send-process-item-wrapper pr-3 mb-3 d-flex align-items-stretch">
+                                                    <div class="bg-white flex-grow-1 flex-shrink-1">
+                                                        <div class="number bg-primary">
+                                                            <div class="text-bold text-center text-white font-size-large">2</div>
+                                                        </div>
+                                                        <div class="send-process-item px-3 pb-3">
+                                                            <div class="image text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/check-list-c7130f794082ca7be233cf20e18590b3.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="sign text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="text-bold mt-3">Khai báo hàng gửi</div>
+                                                            <div class="mt-3">
+                                                                <div class="html-content ql-editor html-content--block">
+                                                                    <p>
+                                                                        <span style="font-size: 14px; color: rgb(33, 37, 41);">Sau
+                                                                            khi mở tài khoản online thành công, Quý khách cần
+                                                                        </span>
+                                                                        <a href="https://vp2-web.faskera.com/auth/login"
+                                                                            rel="noopener noreferrer" target="_blank"
+                                                                            style="font-size: 14px; color: rgb(33, 37, 41);">
+                                                                            <strong>ĐĂNG NHẬP (Login)</strong>
+                                                                            v
+                                                                        </a>
+                                                                        <span style="font-size: 14px; color: rgb(33, 37, 41);">ào
+                                                                            tài khoản của bạn rồi thực hiện khai báo gửi
+                                                                            hàng (thông tin người gửi, thông tin người
+                                                                            nhận, danh sách hàng gửi, thông tin về kiện hàng
+                                                                            gửi, ...) theo mẫu form đã cung cấp
+                                                                            sẵn.&nbsp;</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="send-process-item-wrapper pr-3 mb-3 d-flex align-items-stretch">
+                                                    <div class="bg-white flex-grow-1 flex-shrink-1">
+                                                        <div class="number bg-primary">
+                                                            <div class="text-bold text-center text-white font-size-large">3</div>
+                                                        </div>
+                                                        <div class="send-process-item px-3 pb-3">
+                                                            <div class="image text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/payment-hand-b3473d462a8ee325bf622c7bafc84cfd.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="sign text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="text-bold mt-3">Thanh toán</div>
+                                                            <div class="mt-3">
+                                                                <div class="html-content ql-editor html-content--block">
+                                                                    <p>
+                                                                        <span style="font-size: 14px; color: rgb(33, 37, 41);">Quý
+                                                                            khách sẽ nhận được 01 thông gửi hàng từ công ty
+                                                                            qua email. Nếu không có thắc mắc gì về vận đơn
+                                                                            thì bạn thực hiện thanh toán tiền vận chuyển qua
+                                                                            hình thức chuyển khoản hoặc Quý khách có thể trả
+                                                                            tiền mặt ở nơi gửi/Pick hàng(Nếu địa chỉ gửi hàng
+                                                                            của bạn nằm trong khu vực hỗ trợ pick hàng hoặc có đại
+                                                                            lý thu gom của Vietpost)</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="send-process-item-wrapper pr-3 mb-3 d-flex align-items-stretch">
+                                                    <div class="bg-white flex-grow-1 flex-shrink-1">
+                                                        <div class="number bg-primary">
+                                                            <div class="text-bold text-center text-white font-size-large">4</div>
+                                                        </div>
+                                                        <div class="send-process-item px-3 pb-3">
+                                                            <div class="image text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/transport-car-572e0606e5218054a1205cc7275158c5.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="sign text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="text-bold mt-3">Gửi hàng</div>
+                                                            <div class="mt-3">
+                                                                <div class="html-content ql-editor html-content--block">
+                                                                    <p>
+                                                                        <span style="font-size: 14px; color: rgb(33, 37, 41);">Hàng
+                                                                            hóa cần được đóng gói cẩn thận trước khi đem đi gửi đến
+                                                                            điểm gom hàng/Kho Sydney của Vietpost hoặc giao cho nhân
+                                                                            viên pick hàng tại địa điểm gửi hàng của quý khách. Vui
+                                                                            lòng tham khảo quy cách đóng gói của Vietpost</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-3 text-center">
+                                                                <a class="btn btn-secondary text-bold text-uppercase py-2"
+                                                                    href="https://www.shirogane.vn/">Quy cách đóng gói</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="send-process-item-wrapper pr-3 mb-3 d-flex align-items-stretch">
+                                                    <div class="bg-white flex-grow-1 flex-shrink-1">
+                                                        <div class="number bg-primary">
+                                                            <div class="text-bold text-center text-white font-size-large">5</div>
+                                                        </div>
+                                                        <div class="send-process-item px-3 pb-3">
+                                                            <div class="image text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/receive-014a476ed64a0543f660c259c5cdc484.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="sign text-center mt-3">
+                                                                <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                                    alt="" />
+                                                            </div>
+                                                            <div class="text-bold mt-3">Nhận hàng tại Việt Nam</div>
+                                                            <div class="mt-3">
+                                                                <div class="html-content ql-editor html-content--block">
+                                                                    <p>
+                                                                        <span style="font-size: 14px; color: rgb(33, 37, 41);">Hàng
+                                                                            sẽ được giao cho người nhận từ 7 – 10 ngày làm việc (tùy
+                                                                            theo vị trí địa lý) kể từ ngày hàng lên máy bay rời khỏi
+                                                                            Úc. Quý khách có thể theo dõi kiện hàng của mình trực
+                                                                            tiếp trên website của công ty. Hệ thống sẽ tự động cập
+                                                                            nhật thông tin đến email của quý khách về các trạng
+                                                                            thái, lịch trình của vận đơn</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="Toastify__toast-backdrop"></div>
                         <div class="Toastify"></div>
