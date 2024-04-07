@@ -455,8 +455,8 @@ const HomePage = () => {
                                                                     `}
                                                                 </style>
                                                                 <span class=" css-1okebmr-indicatorSeparator"></span>
-                                                                    <style data-emotion="css tlfecz-indicatorContainer">
-                                                                        {`
+                                                                <style data-emotion="css tlfecz-indicatorContainer">
+                                                                    {`
                                                                             .css-tlfecz-indicatorContainer {
                                                                                 color: hsl(0, 0%, 80%);
                                                                                 display: flex;
@@ -469,10 +469,10 @@ const HomePage = () => {
                                                                                 color: hsl(0, 0%, 60%);
                                                                             }
                                                                         `}
-                                                                    </style>
+                                                                </style>
                                                                 <div class=" css-tlfecz-indicatorContainer" aria-hidden="true">
-                                                                <style data-emotion="css 8mmkcg">
-                                                                    {`
+                                                                    <style data-emotion="css 8mmkcg">
+                                                                        {`
                                                                         .css-8mmkcg {
                                                                             display: inline-block;
                                                                             fill: currentColor;
@@ -481,7 +481,7 @@ const HomePage = () => {
                                                                             stroke-width: 0;
                                                                         }
                                                                     `}
-                                                                </style>
+                                                                    </style>
                                                                     <svg height="20" width="20" viewBox="0 0 20 20"
                                                                         aria-hidden="true" focusable="false" class="css-8mmkcg">
                                                                         <path
@@ -503,6 +503,26 @@ const HomePage = () => {
                                             <div class="px-4 py-5 text-center">
                                                 <img src="https://vietpost.com.au/_next/static/map-56d9690d6c2b1c119e13d3099d161966.svg"
                                                     alt="" class="w-80" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-express-section bg-primary text-white">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1 class="text-bold text-center font-size-x-large font-size-lg-xx-large mt-5 mb-3">
+                                                Chuyển
+                                                phát nhanh</h1>
+                                            <div class="text-center font-size-large font-size-lg-x-large">Từ Australia đến 64 tỉnh
+                                                thành
+                                                tại Việt Nam</div>
+                                            <div>
+                                                <img src="https://vietpost.com.au/_next/static/express-4996162dc89416d24558e14d3959818f.svg"
+                                                    alt="" class="d-none d-sm-block w-max-100 mt-3 mb-3" />
+                                                <img src="https://vietpost.com.au/_next/static/express-m-34d96d9b32aa81152be434252130a64d.svg"
+                                                    alt="" class="d-sm-none w-max-100 mt-5 mb-5" />
                                             </div>
                                         </div>
                                     </div>
