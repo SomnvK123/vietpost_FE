@@ -1,8 +1,14 @@
-import React from 'react';
-import { Button, Navbar, Nav, Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Button, Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import './Header.css';
 
+
 function Header() {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
     return (
         <>
             <header id="header" className="header">
@@ -10,49 +16,62 @@ function Header() {
                 <div className="header-section">
                     <div className="nav-container container">
                         <div className="position-relative">
-                            <nav className="navbar navbar-expand-xl navbar-light">
-                                <a className="navbar-brand" href="/">
+                            <Navbar expand="xl" variant="light">
+                                <Navbar.Brand href="/">
                                     <img src="https://vietpost.com.au/_next/static/logo-header-d003d2174319c9c12a4071ecb632a963.svg" alt="VietPost Logo" />
-                                </a>
-                                <button type="button" aria-label="Toggle navigation" className="btn sidebar-toggle navbar-toggler collapsed">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                                <div className="navbar-collapse collapse" id="basic-navbar-nav">
-                                    <div className="navbar-nav">
-                                        <div className="nav-item">
-                                            <a className="nav-link active" href="/">
-                                                <svg viewBox="0 0 17.29 13.15" className="mr-1 d-none d-xl-inline">
-                                                    <path fill="#f26b30" d="M8.64 0L0 5.17h3.15v7.98h3.64V7.64h3.7v5.51h3.65V5.17h3.15z"></path>
-                                                </svg>
-                                                Trang chủ
-                                            </a>
+                                </Navbar.Brand>
+                                <Navbar.Toggle aria-label="Toggle navigation" className="btn sidebar-toggle navbar-toggler collapsed" />
+                                <Navbar.Collapse className="navbar-collapse collapse" id="basic-navbar-nav">
+                                    <Nav className="mr-auto">
+                                        <div className="navbar-nav">
+                                            <div className="nav-item">
+                                                <Nav.Link href="/" className="nav-link active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.29 13.15" className="mr-1 d-none d-xl-inline">
+                                                        <path fill="#f26b30" d="M8.64 0L0 5.17h3.15v7.98h3.64V7.64h3.7v5.51h3.65V5.17h3.15z"></path>
+                                                    </svg>
+                                                    Trang chủ
+                                                </Nav.Link>
+                                            </div>
+                                            <div class="nav-item">
+                                                <Nav.Link className="nav-link" href="#">Dịch vụ</Nav.Link>
+                                            </div>
+                                            <div class="nav-item">
+                                                <Nav.Link className="nav-link" href="#">Bảng giá</Nav.Link>
+                                            </div>
+                                            <div class="nav-item">
+                                                <Nav.Link className="nav-link" href="#">Chính sách</Nav.Link>
+                                            </div>
+                                            <div class="d-xl-none nav-item">
+                                                <Nav.Link className="nav-link d-xl-none" href="#">Hướng dẫn</Nav.Link>
+                                            </div>
+                                            <div class="d-xl-none nav-item dropdown">
+                                                <NavDropdown title="Hotline" id="nav-home-dropdown" className="nav-item dropdown d-xl-none" show={dropdownOpen}>
+                                                    <NavDropdown.Toggle onClick={(e) => {
+                                                        e.preventDefault();
+                                                        toggleDropdown();
+                                                    }}>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.05 6.53" className="text-dropdown-toggle--icon">
+                                                            <path fill="#f26b30" d="M0 0l6.53 6.53L13.05 0z"></path>
+                                                        </svg>
+                                                        Hotline
+                                                    </NavDropdown.Toggle>
+                                                    <NavDropdown.Menu>
+                                                        <NavDropdown.Item href="#">Action</NavDropdown.Item>
+                                                        <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+                                                        <NavDropdown.Item href="#">Something else</NavDropdown.Item>
+                                                    </NavDropdown.Menu>
+                                                </NavDropdown>
+                                            </div>
+                                            <div class="d-xl-none nav-item">
+                                                <Nav.Link className="nav-link d-xl-none" href="#">Liên hệ</Nav.Link>
+                                            </div>
+                                            <div class="d-xl-none nav-item">
+                                                <Nav.Link className="nav-link d-xl-none" href="#">Tin tức</Nav.Link>
+                                            </div>
                                         </div>
-                                        <div className="nav-item">
-                                            <a className="nav-link" href="#">Dịch vụ</a>
-                                        </div>
-                                        <div className="nav-item">
-                                            <a className="nav-link" href="#">Bảng giá</a>
-                                        </div>
-                                        <div className="nav-item">
-                                            <a className="nav-link" href="#">Chính sách</a>
-                                        </div>
-                                        <div className="d-xl-none nav-item">
-                                            <a className="nav-link" href="#">Hướng dẫn</a>
-                                        </div>
-                                        <div className="d-xl-none nav-item dropdown">
-                                            <a aria-haspopup="true" aria-expanded="false" id="nav-home-dropdown" href="#" className="dropdown-toggle nav-link" role="button">Hotline</a>
-                                        </div>
-                                        <div className="d-xl-none nav-item">
-                                            <a className="nav-link" href="#">Liên hệ</a>
-                                        </div>
-                                        <div className="d-xl-none nav-item">
-                                            <a className="nav-link" href="#">Tin tức</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </nav>
+                                    </Nav>
+                                </Navbar.Collapse>
+                            </Navbar>
                             <div className="top-button-container d-flex flex-row align-items-center justify-content-end">
                                 <a className="link-btn d-none d-xl-block" href="#">Hướng dẫn</a>
                                 <div className="header--top-links-dropdown d-none d-xl-block dropdown">
@@ -65,8 +84,8 @@ function Header() {
                                 </div>
                                 <a className="link-btn d-none d-xl-block" href="#">Liên hệ</a>
                                 <a className="link-btn d-none d-xl-block" href="#">Tin tức</a>
-                                <a className="btn btn-primary-light ml-4 transport-registration-btn" href="#">Đăng ký vận chuyển</a>
-                                <a className="btn btn-primary-light d-block ml-2" href="#">Đăng nhập</a>
+                                <Button variant="primary-light" className="ml-4 transport-registration-btn">Đăng ký vận chuyển</Button>
+                                <Button variant="primary-light" className="ml-2">Đăng nhập</Button>
                             </div>
                             <div className="hot-button-container d-flex flex-row justify-content-end align-items-center">
                                 {/* <a className="btn-icon-order-create" href="#">
