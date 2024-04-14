@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.anchor {
+    display: block;
+    height: 94px;
+    margin-top: -94px;
+    visibility: hidden
+  }
+  
+  @media(min-width: 1260px) {
+    .anchor {
+      height: 82px;
+      margin-top: -82px
+    }
+  }
+
+  .bg-white {
+    background-color: #fff !important
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+  }
+
+  .col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+  }

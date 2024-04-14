@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from 'react-slick';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 
 const CustomPrevArrow = (props) => (
@@ -36,6 +36,8 @@ const Carousel = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: <CustomPrevArrow />,
@@ -51,16 +53,16 @@ const Carousel = () => {
                         <div className="slider-area">
                             <Slider {...settings}>
                                 <div>
-                                    <img className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/2c525b94-d9a9-4da5-ab60-ad66e18d5ec2.jpg" alt="63" />
+                                    <Image className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/2c525b94-d9a9-4da5-ab60-ad66e18d5ec2.jpg" alt="63" />
                                 </div>
                                 <div>
-                                    <img className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/5cc38295-6173-4d59-9935-078f76f5f9e2.jpg" alt="giao nhan" />
+                                    <Image className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/5cc38295-6173-4d59-9935-078f76f5f9e2.jpg" alt="giao nhan" />
                                 </div>
                                 <div>
-                                    <img className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/511dadee-10a2-4e36-ad0b-b3458328bbab.jpg" alt="64 tinh" />
+                                    <Image className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/511dadee-10a2-4e36-ad0b-b3458328bbab.jpg" alt="64 tinh" />
                                 </div>
                                 <div>
-                                    <img className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/3a736b1e-895d-4905-874c-9e4bf97a7500.jpg" alt="kho hang" />
+                                    <Image className="top-banner--slider-img w-100" src="https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/3a736b1e-895d-4905-874c-9e4bf97a7500.jpg" alt="kho hang" />
                                 </div>
                             </Slider>
                         </div>
