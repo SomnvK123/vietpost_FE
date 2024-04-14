@@ -2,23 +2,255 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VietPost Navigation Bar</title>
-    <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+KC1yX8WQSh8eQFWtcP3+NtVgn+6pFz4i2lIlY6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" />
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit&amp;hl=vi" async="" defer=""></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charSet="utf-8" />
+    <link rel="alternate" href="https://vietpost.com.au/" hrefLang="vi-vn" />
+    <meta name="author" content="Vietpost" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, user-scalable=no" />
+    <title>Vietpost</title>
+    <meta name="description" content="Vietpost" />
+    <meta name="google-site-verification" content="W6zNSj4vO4Oc52eij7nux05yQuQEXaNr2oRrQWUbbj0" />
+    <meta property="fb:app_id" content="155011878546726" />
+    <meta property="og:image" content="https://vietpost.com.au/default-og-image.jpg" />
+    <meta property="og:title" content="Vietpost" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Vietpost" />
+    <link rel="canonical" href="https://vietpost.com.au/" />
+    <script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=ResizeObserver%2CIntl"
+        async=""></script>
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://vietpost.com.au",
+                "description": "Vận chuyển hàng hóa quốc tế Nhật - Úc, nhanh chóng tiện lợi",
+                "telephone": "0451818366",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "14 - 16 Belmore Road North",
+                    "addressLocality": "Punchbowl",
+                    "addressRegion": "NSW",
+                    "postalCode": "2196",
+                    "addressCountry": "AU"
+                },
+                "name": "Vietpost"
+            }</script>
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://vietpost.com.au",
+                "logo": "https://vietpost.com.au/apple-icon.png",
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "telephone": "0451818366",
+                        "contactType": "customer service",
+                        "areaServed": "VN",
+                        "availableLanguage": [
+                            "Vietnamese",
+                            "English"
+                        ]
+                    }
+                ]
+            }</script>
+    <meta name="next-head-count" content="32" />
+    <link rel="preload" href="vietpost.css" as="style" />
+    <link rel="stylesheet" href="vietpost.css" data-n-g="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-e7a279300235e161e32a.js"></script>
+    <script src="/_next/static/chunks/webpack-c70ab6984264d2bfbd20.js" defer=""></script>
+    <script src="/_next/static/chunks/0f1ac474-df3f2266cfd7eddfe546.js" defer=""></script>
+    <script src="/_next/static/chunks/main-72dc9e5f19f611a58ac5.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-11f31ad094891d71019c.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-15596c0937e92d3c3325.js" defer=""></script>
+    <script src="/_next/static/z9X_BFPUWBEYsJzySMT27/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/z9X_BFPUWBEYsJzySMT27/_ssgManifest.js" defer=""></script>
+    <style data-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZs.woff) format('woff')
+        }
 
-    <!-- Bootstrap 5 JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-        crossorigin="anonymous"></script>
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZs.woff) format('woff')
+        }
 
-    <link rel="stylesheet" href="vietpost.css">
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+    </style>
 </head>
 
-<body class="remove-outline">
+<body>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        }
+        )(window, document, 'script', 'dataLayer', 'GTM-WBNTT9D');
+    </script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBNTT9D" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <div id="__next">
         <header id="header" class="header">
             <div class="header-bg"></div>
@@ -27,7 +259,7 @@
                     <div class="position-relative">
                         <nav class="navbar navbar-expand-xl navbar-light">
                             <a class="navbar-brand" href="/">
-                                <img src="https://vietpost.com.au/_next/static/logo-header-d003d2174319c9c12a4071ecb632a963.svg"
+                                <img src="/_next/static/logo-header-d003d2174319c9c12a4071ecb632a963.svg"
                                     alt="VietPost Logo" />
                             </a>
                             <button type="button" aria-label="Toggle navigation"
@@ -50,32 +282,32 @@
                                         </a>
                                     </div>
                                     <div class="nav-item">
-                                        <a class="nav-link" href="#">Dịch vụ</a>
+                                        <a class="nav-link" href="/our-services">Dịch vụ</a>
                                     </div>
                                     <div class="nav-item">
-                                        <a class="nav-link" href="#">Bảng giá</a>
+                                        <a class="nav-link" href="/pricing">Bảng giá</a>
                                     </div>
                                     <div class="nav-item">
-                                        <a class="nav-link" href="#">Chính sách</a>
+                                        <a class="nav-link" href="help/category/dieu-khoan-chinh-sach">Chính sách</a>
                                     </div>
                                     <div class="d-xl-none nav-item">
-                                        <a class="nav-link" href="#">Hướng dẫn</a>
+                                        <a class="nav-link" href="/help">Hướng dẫn</a>
                                     </div>
                                     <div class="d-xl-none nav-item dropdown">
                                         <a aria-haspopup="true" aria-expanded="false" id="nav-home-dropdown" href="#"
                                             class="dropdown-toggle nav-link" role="button">Hotline</a>
                                     </div>
                                     <div class="d-xl-none nav-item">
-                                        <a class="nav-link" href="#">Liên hệ</a>
+                                        <a class="nav-link" href="/contact">Liên hệ</a>
                                     </div>
                                     <div class="d-xl-none nav-item">
-                                        <a class="nav-link" href="#">Tin tức</a>
+                                        <a class="nav-link" href="/news">Tin tức</a>
                                     </div>
                                 </div>
                             </div>
                         </nav>
                         <div class="top-button-container d-flex flex-row align-items-center justify-content-end">
-                            <a class="link-btn d-none d-xl-block" href="#">Hướng dẫn</a>
+                            <a class="link-btn d-none d-xl-block" href="/help">Hướng dẫn</a>
                             <div class="header--top-links-dropdown d-none d-xl-block dropdown">
                                 <a class="text-dropdown-toggle link-btn user-select-none white dropdown-toggle"
                                     aria-haspopup="true" aria-expanded="false">
@@ -86,14 +318,14 @@
                                     </svg>
                                 </a>
                             </div>
-                            <a class="link-btn d-none d-xl-block" href="#">Liên hệ</a>
-                            <a class="link-btn d-none d-xl-block" href="#">Tin tức</a>
-                            <a class="btn btn-primary-light ml-4 transport-registration-btn" href="#">Đăng ký vận
-                                chuyển</a>
-                            <a class="btn btn-primary-light d-block ml-2" href="#">Đăng nhập</a>
+                            <a class="link-btn d-none d-xl-block" href="/contact">Liên hệ</a>
+                            <a class="link-btn d-none d-xl-block" href="/news">Tin tức</a>
+                            <a class="btn btn-primary-light ml-4 transport-registration-btn"
+                                href="/account/order/create">Đăng ký vận chuyển</a>
+                            <a class="btn btn-primary-light d-block ml-2" href="/auth/login">Đăng nhập</a>
                         </div>
                         <div class="hot-button-container d-flex flex-row justify-content-end align-items-center">
-                            <!-- <a class="btn-icon-order-create" href="#">
+                            <a class="btn-icon-order-create" href="/account/order/create">
                                 <svg id="order-create_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
                                     viewBox="0 0 39.36 19.2" xml:space="preserve">
                                     <style>
@@ -115,8 +347,8 @@
                                     </path>
                                 </svg>
                                 <span>Tạo vận đơn</span>
-                            </a> -->
-                            <a class="btn-icon ml-4" href="#">
+                            </a>
+                            <a class="btn-icon ml-4" href="/#price-estimate">
                                 <svg id="calculator_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
                                     viewBox="0 0 20.43 20.43" xml:space="preserve">
                                     <style>
@@ -143,7 +375,7 @@
                                 </svg>
                                 <span>Ước tính giá</span>
                             </a>
-                            <a class="btn-icon ml-4" href="#">
+                            <a class="btn-icon ml-4" href="/#locations">
                                 <svg id="location_svg__Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
                                     viewBox="0 0 21.29 22.6" xml:space="preserve">
                                     <style>
@@ -183,8 +415,7 @@
                         <div class="row">
                             <div class="col-12 px-0 position-relative">
                                 <div class="slider-area">
-                                    <div class="slick-slider slick-initialized" dir="ltr" autoplay="true"
-                                        data-autoplay-speed="3000">
+                                    <div class="slick-slider slick-initialized" dir="ltr">
                                         <div class="slider-button slider-button--prev slick-arrow slick-prev"
                                             style="display:block">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.66 64.66">
@@ -341,8 +572,9 @@
                                             <input placeholder="Nhập số vận đơn để tra cứu" value=""
                                                 class="form-control wrapped-input--input" />
                                         </div>
-                                        <button type="submit"class="btn btn-secondary text-bold text-uppercase clearfix flex-grow-0 flex-shrink-0">
-                                            TRA CỨU ĐƠN VẬN</button>
+                                        <button type="submit"
+                                            class="btn btn-secondary text-bold text-uppercase clearfix flex-grow-0 flex-shrink-0">TRA
+                                            CỨU ĐƠN VẬN</button>
                                     </form>
                                 </div>
                             </div>
@@ -360,34 +592,28 @@
                                 <div class="html-content ql-editor html-content--block mb-2">
                                     <p>
                                         <em>Tại Vietpost, sứ mệnh của chúng tôi là cung cấp dịch vụ vận chuyển xuất sắc
-                                            cho
-                                            khách hàng và chúng tôi tự hào về sự chuyên nghiệp, tận tâm của mình.</em>
+                                            cho khách hàng và chúng tôi tự hào về sự chuyên nghiệp, tận tâm của
+                                            mình.</em>
                                     </p>
                                     <p>
                                         <em>Phạm vi dịch vụ của chúng tôi bao gồm nhưng không giới hạn các dịch vụ
-                                            chuyển
-                                            phát hàng hóa quốc tế, chuyển tiếp hàng hóa, vận chuyển hàng thương mại điện
-                                            tử.... Đặc biệt, chúng tôi được ra đời nhằm đáp ứng nhu cầu vận chuyển hàng
-                                            hóa
-                                            từ Úc về Việt nam cho các kiều bào, du học sinh đang sinh sống tại Úc cũng
-                                            như
-                                            những khách hàng đang ở tại Việt Nam và có nhu cầu sử dụng, vận chuyển hàng
-                                            hóa
-                                            từ Úc về đến Việt Nam</em>
+                                            chuyển phát hàng hóa quốc tế, chuyển tiếp hàng hóa, vận chuyển hàng thương
+                                            mại điện tử.... Đặc biệt, chúng tôi được ra đời nhằm đáp ứng nhu cầu vận
+                                            chuyển hàng hóa từ Úc về Việt nam cho các kiều bào, du học sinh đang sinh
+                                            sống tại Úc cũng như những khách hàng đang ở tại Việt Nam và có nhu cầu sử
+                                            dụng, vận chuyển hàng hóa từ Úc về đến Việt Nam</em>
                                     </p>
                                     <p>
                                         <em>Phương châm của Vietpost là lấy chữ TÍN trong kinh doanh là yếu tố đặc biệt
-                                            quan
-                                            trọng góp phần thành công của chúng tôi và để luôn đảm bảo quyền lợi của
-                                            khách
-                                            hàng.</em>
+                                            quan trọng góp phần thành công của chúng tôi và để luôn đảm bảo quyền lợi
+                                            của khách hàng.</em>
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="https://vietpost.com.au/_next/static/about-us-6c979effed40f219cfdaca0f85deb9ac.svg"
-                                        alt="" class="d-none d-sm-block w-max-100 mt-5 mb-3" />
-                                    <img src="https://vietpost.com.au/_next/static/about-us-m-0481ffc90ae51d35e2ee96b703948c75.svg"
-                                        alt="" class="d-sm-none w-max-100 mt-5 mb-3" />
+                                    <img src="/_next/static/about-us-6c979effed40f219cfdaca0f85deb9ac.svg" alt=""
+                                        class="d-none d-sm-block w-max-100 mt-5 mb-3" />
+                                    <img src="/_next/static/about-us-m-0481ffc90ae51d35e2ee96b703948c75.svg" alt=""
+                                        class="d-sm-none w-max-100 mt-5 mb-3" />
                                 </div>
                             </div>
                         </div>
@@ -398,28 +624,30 @@
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <h1 class="text-bold text-center text-lg-left font-size-x-large my-5">Vận chuyển hàng
-                                    hóa về
-                                    Việt Nam</h1>
+                                    hóa về Việt Nam</h1>
                                 <div>
-                                    <a class="btn btn-secondary text-bold p-3 mb-4 mb-lg-5 mr-2 mr-sm-4" href="#">ĐÂNG
-                                        KÝ
-                                        VẬN CHUYỂN NGAY</a>
-                                    <a class="btn btn-secondary text-bold p-3 mb-4 mb-lg-5" href="#">BẢNG GIÁ DỊCH
-                                        VỤ</a>
+                                    <a class="btn btn-secondary text-bold p-3 mb-4 mb-lg-5 mr-2 mr-sm-4"
+                                        href="/account/order/create">ĐÂNG KÝ VẬN CHUYỂN NGAY</a>
+                                    <a class="btn btn-secondary text-bold p-3 mb-4 mb-lg-5" href="/pricing">BẢNG GIÁ
+                                        DỊCH VỤ</a>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
                                 <p class="text-bold font-size-large mb-3 mt-lg-5">Nhanh chóng, uy tín và chuyên nghiệp
-                                    là
-                                    những gì mà VIETPOST đang thực hiện đối với khách hàng. Liên hệ chúng tôi để được
-                                    phục
-                                    vụ:</p>
+                                    là những gì mà VIETPOST đang thực hiện đối với khách hàng. Liên hệ chúng tôi để được
+                                    phục vụ:</p>
                                 <p class="font-size-x-large">Hotline:
-                                    0451818366</p>
+                                    <!-- -->
+                                    <!-- -->
+                                    0451818366
+                                </p>
                                 <p class="font-size-x-large mb-5">
                                     Email:
-                                    <a href="#" class="__cf_email__"
-                                        data-cfemail="4d2223212423280d3b2428393d223e39632e2220632c38">scadjk@gmail.com</a>
+                                    <!-- -->
+                                    <!-- -->
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="325d5c5e5b5c5772445b5746425d41461c515d5f1c5347">[email
+                                        &#160;protected]</a>
                                 </p>
                             </div>
                         </div>
@@ -464,6 +692,9 @@
                                                 class="css-7pg0cj-a11yText"></span>
                                             <style data-emotion="css yk16xz-control">
                                                 .css-yk16xz-control {
+                                                    -webkit-align-items: center;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
                                                     align-items: center;
                                                     background-color: hsl(0, 0%, 100%);
                                                     border-color: hsl(0, 0%, 80%);
@@ -471,12 +702,21 @@
                                                     border-style: solid;
                                                     border-width: 1px;
                                                     cursor: default;
+                                                    display: -webkit-box;
+                                                    display: -webkit-flex;
+                                                    display: -ms-flexbox;
                                                     display: flex;
+                                                    -webkit-box-flex-wrap: wrap;
+                                                    -webkit-flex-wrap: wrap;
+                                                    -ms-flex-wrap: wrap;
                                                     flex-wrap: wrap;
+                                                    -webkit-box-pack: justify;
+                                                    -webkit-justify-content: space-between;
                                                     justify-content: space-between;
                                                     min-height: 38px;
                                                     outline: 0 !important;
                                                     position: relative;
+                                                    -webkit-transition: all 100ms;
                                                     transition: all 100ms;
                                                     box-sizing: border-box;
                                                 }
@@ -488,11 +728,23 @@
                                             <div class=" css-yk16xz-control">
                                                 <style data-emotion="css 1hwfws3">
                                                     .css-1hwfws3 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
+                                                        -webkit-flex: 1;
+                                                        -ms-flex: 1;
                                                         flex: 1;
+                                                        -webkit-box-flex-wrap: wrap;
+                                                        -webkit-flex-wrap: wrap;
+                                                        -ms-flex-wrap: wrap;
                                                         flex-wrap: wrap;
                                                         padding: 2px 8px;
+                                                        -webkit-overflow-scrolling: touch;
                                                         position: relative;
                                                         overflow: hidden;
                                                         box-sizing: border-box;
@@ -506,6 +758,9 @@
                                                             margin-right: 2px;
                                                             position: absolute;
                                                             top: 50%;
+                                                            -webkit-transform: translateY(-50%);
+                                                            -moz-transform: translateY(-50%);
+                                                            -ms-transform: translateY(-50%);
                                                             transform: translateY(-50%);
                                                             box-sizing: border-box;
                                                         }
@@ -527,7 +782,7 @@
                                                                 autoCorrect="off" id="react-select-region-input"
                                                                 spellcheck="false" tabindex="0" value=""
                                                                 aria-autocomplete="list"
-                                                                style="box-sizing: content-box; width: 1px; background: none; border: 0; font-size: inherit; opacity: 1; outline: none; padding: 0; color: inherit;" />
+                                                                style="box-sizing:content-box;width:1px;label:input;background:0;border:0;font-size:inherit;opacity:1;outline:0;padding:0;color:inherit" />
                                                             <div
                                                                 style="position:absolute;top:0;left:0;visibility:hidden;height:0;overflow:scroll;white-space:pre">
                                                             </div>
@@ -536,9 +791,19 @@
                                                 </div>
                                                 <style data-emotion="css 1wy0on6">
                                                     .css-1wy0on6 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        -webkit-align-self: stretch;
+                                                        -ms-flex-item-align: stretch;
                                                         align-self: stretch;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
+                                                        -webkit-flex-shrink: 0;
+                                                        -ms-flex-negative: 0;
                                                         flex-shrink: 0;
                                                         box-sizing: border-box;
                                                     }
@@ -546,6 +811,8 @@
                                                 <div class=" css-1wy0on6">
                                                     <style data-emotion="css 1okebmr-indicatorSeparator">
                                                         .css-1okebmr-indicatorSeparator {
+                                                            -webkit-align-self: stretch;
+                                                            -ms-flex-item-align: stretch;
                                                             align-self: stretch;
                                                             background-color: hsl(0, 0%, 80%);
                                                             margin-bottom: 8px;
@@ -558,8 +825,12 @@
                                                     <style data-emotion="css tlfecz-indicatorContainer">
                                                         .css-tlfecz-indicatorContainer {
                                                             color: hsl(0, 0%, 80%);
+                                                            display: -webkit-box;
+                                                            display: -webkit-flex;
+                                                            display: -ms-flexbox;
                                                             display: flex;
                                                             padding: 8px;
+                                                            -webkit-transition: color 150ms;
                                                             transition: color 150ms;
                                                             box-sizing: border-box;
                                                         }
@@ -615,6 +886,9 @@
                                                 class="css-7pg0cj-a11yText"></span>
                                             <style data-emotion="css yk16xz-control">
                                                 .css-yk16xz-control {
+                                                    -webkit-align-items: center;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
                                                     align-items: center;
                                                     background-color: hsl(0, 0%, 100%);
                                                     border-color: hsl(0, 0%, 80%);
@@ -626,11 +900,17 @@
                                                     display: -webkit-flex;
                                                     display: -ms-flexbox;
                                                     display: flex;
+                                                    -webkit-box-flex-wrap: wrap;
+                                                    -webkit-flex-wrap: wrap;
+                                                    -ms-flex-wrap: wrap;
                                                     flex-wrap: wrap;
+                                                    -webkit-box-pack: justify;
+                                                    -webkit-justify-content: space-between;
                                                     justify-content: space-between;
                                                     min-height: 38px;
                                                     outline: 0 !important;
                                                     position: relative;
+                                                    -webkit-transition: all 100ms;
                                                     transition: all 100ms;
                                                     box-sizing: border-box;
                                                 }
@@ -642,13 +922,23 @@
                                             <div class=" css-yk16xz-control">
                                                 <style data-emotion="css 1hwfws3">
                                                     .css-1hwfws3 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
                                                         -webkit-flex: 1;
                                                         -ms-flex: 1;
                                                         flex: 1;
+                                                        -webkit-box-flex-wrap: wrap;
+                                                        -webkit-flex-wrap: wrap;
+                                                        -ms-flex-wrap: wrap;
                                                         flex-wrap: wrap;
                                                         padding: 2px 8px;
+                                                        -webkit-overflow-scrolling: touch;
                                                         position: relative;
                                                         overflow: hidden;
                                                         box-sizing: border-box;
@@ -662,6 +952,9 @@
                                                             margin-right: 2px;
                                                             position: absolute;
                                                             top: 50%;
+                                                            -webkit-transform: translateY(-50%);
+                                                            -moz-transform: translateY(-50%);
+                                                            -ms-transform: translateY(-50%);
                                                             transform: translateY(-50%);
                                                             box-sizing: border-box;
                                                         }
@@ -683,7 +976,7 @@
                                                                 autoCorrect="off" id="react-select-metroArea-input"
                                                                 spellcheck="false" tabindex="0" value=""
                                                                 aria-autocomplete="list"
-                                                                style="box-sizing: content-box; width: 1px; background: none; border: none; font-size: inherit; opacity: 1; outline: none; padding: 0; color: inherit;" />
+                                                                style="box-sizing:content-box;width:1px;label:input;background:0;border:0;font-size:inherit;opacity:1;outline:0;padding:0;color:inherit" />
                                                             <div
                                                                 style="position:absolute;top:0;left:0;visibility:hidden;height:0;overflow:scroll;white-space:pre">
                                                             </div>
@@ -692,9 +985,19 @@
                                                 </div>
                                                 <style data-emotion="css 1wy0on6">
                                                     .css-1wy0on6 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        -webkit-align-self: stretch;
+                                                        -ms-flex-item-align: stretch;
                                                         align-self: stretch;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
+                                                        -webkit-flex-shrink: 0;
+                                                        -ms-flex-negative: 0;
                                                         flex-shrink: 0;
                                                         box-sizing: border-box;
                                                     }
@@ -702,6 +1005,8 @@
                                                 <div class=" css-1wy0on6">
                                                     <style data-emotion="css 1okebmr-indicatorSeparator">
                                                         .css-1okebmr-indicatorSeparator {
+                                                            -webkit-align-self: stretch;
+                                                            -ms-flex-item-align: stretch;
                                                             align-self: stretch;
                                                             background-color: hsl(0, 0%, 80%);
                                                             margin-bottom: 8px;
@@ -714,8 +1019,12 @@
                                                     <style data-emotion="css tlfecz-indicatorContainer">
                                                         .css-tlfecz-indicatorContainer {
                                                             color: hsl(0, 0%, 80%);
+                                                            display: -webkit-box;
+                                                            display: -webkit-flex;
+                                                            display: -ms-flexbox;
                                                             display: flex;
                                                             padding: 8px;
+                                                            -webkit-transition: color 150ms;
                                                             transition: color 150ms;
                                                             box-sizing: border-box;
                                                         }
@@ -753,8 +1062,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-7">
                                 <div class="px-4 py-5 text-center">
-                                    <img src="https://vietpost.com.au/_next/static/map-56d9690d6c2b1c119e13d3099d161966.svg"
-                                        alt="" class="w-80" />
+                                    <img src="/_next/static/map-56d9690d6c2b1c119e13d3099d161966.svg" alt=""
+                                        class="w-80" />
                                 </div>
                             </div>
                         </div>
@@ -765,16 +1074,14 @@
                         <div class="row">
                             <div class="col-12">
                                 <h1 class="text-bold text-center font-size-x-large font-size-lg-xx-large mt-5 mb-3">
-                                    Chuyển
-                                    phát nhanh</h1>
+                                    Chuyển phát nhanh</h1>
                                 <div class="text-center font-size-large font-size-lg-x-large">Từ Australia đến 64 tỉnh
-                                    thành
-                                    tại Việt Nam</div>
+                                    thành tại Việt Nam</div>
                                 <div>
-                                    <img src="https://vietpost.com.au/_next/static/express-4996162dc89416d24558e14d3959818f.svg"
-                                        alt="" class="d-none d-sm-block w-max-100 mt-3 mb-3" />
-                                    <img src="https://vietpost.com.au/_next/static/express-m-34d96d9b32aa81152be434252130a64d.svg"
-                                        alt="" class="d-sm-none w-max-100 mt-5 mb-5" />
+                                    <img src="/_next/static/express-4996162dc89416d24558e14d3959818f.svg" alt=""
+                                        class="d-none d-sm-block w-max-100 mt-3 mb-3" />
+                                    <img src="/_next/static/express-m-34d96d9b32aa81152be434252130a64d.svg" alt=""
+                                        class="d-sm-none w-max-100 mt-5 mb-5" />
                                 </div>
                             </div>
                         </div>
@@ -795,8 +1102,8 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="px-4 py-3 py-md-5 mt-md-5 text-center">
-                                    <img src="https://vietpost.com.au/_next/static/estimate-price-874460f9b200eb1a922a6a0d0ece7615.svg"
-                                        alt="" class="w-80" />
+                                    <img src="/_next/static/estimate-price-874460f9b200eb1a922a6a0d0ece7615.svg" alt=""
+                                        class="w-80" />
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 ">
@@ -829,6 +1136,9 @@
                                                 class="css-7pg0cj-a11yText"></span>
                                             <style data-emotion="css yk16xz-control">
                                                 .css-yk16xz-control {
+                                                    -webkit-align-items: center;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
                                                     align-items: center;
                                                     background-color: hsl(0, 0%, 100%);
                                                     border-color: hsl(0, 0%, 80%);
@@ -836,12 +1146,21 @@
                                                     border-style: solid;
                                                     border-width: 1px;
                                                     cursor: default;
+                                                    display: -webkit-box;
+                                                    display: -webkit-flex;
+                                                    display: -ms-flexbox;
                                                     display: flex;
+                                                    -webkit-box-flex-wrap: wrap;
+                                                    -webkit-flex-wrap: wrap;
+                                                    -ms-flex-wrap: wrap;
                                                     flex-wrap: wrap;
+                                                    -webkit-box-pack: justify;
+                                                    -webkit-justify-content: space-between;
                                                     justify-content: space-between;
                                                     min-height: 38px;
                                                     outline: 0 !important;
                                                     position: relative;
+                                                    -webkit-transition: all 100ms;
                                                     transition: all 100ms;
                                                     box-sizing: border-box;
                                                 }
@@ -853,13 +1172,23 @@
                                             <div class=" css-yk16xz-control">
                                                 <style data-emotion="css 1hwfws3">
                                                     .css-1hwfws3 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
                                                         -webkit-flex: 1;
                                                         -ms-flex: 1;
                                                         flex: 1;
+                                                        -webkit-box-flex-wrap: wrap;
+                                                        -webkit-flex-wrap: wrap;
+                                                        -ms-flex-wrap: wrap;
                                                         flex-wrap: wrap;
                                                         padding: 2px 8px;
+                                                        -webkit-overflow-scrolling: touch;
                                                         position: relative;
                                                         overflow: hidden;
                                                         box-sizing: border-box;
@@ -873,6 +1202,9 @@
                                                             margin-right: 2px;
                                                             position: absolute;
                                                             top: 50%;
+                                                            -webkit-transform: translateY(-50%);
+                                                            -moz-transform: translateY(-50%);
+                                                            -ms-transform: translateY(-50%);
                                                             transform: translateY(-50%);
                                                             box-sizing: border-box;
                                                         }
@@ -894,7 +1226,7 @@
                                                                 autoCorrect="off" id="react-select-sendLocation-input"
                                                                 spellcheck="false" tabindex="0" value=""
                                                                 aria-autocomplete="list"
-                                                                style="box-sizing: content-box; width: 1px; background: none; border: none; font-size: inherit; opacity: 1; outline: none; padding: 0; color: inherit;" />
+                                                                style="box-sizing:content-box;width:1px;label:input;background:0;border:0;font-size:inherit;opacity:1;outline:0;padding:0;color:inherit" />
                                                             <div
                                                                 style="position:absolute;top:0;left:0;visibility:hidden;height:0;overflow:scroll;white-space:pre">
                                                             </div>
@@ -910,6 +1242,9 @@
                                                         -webkit-align-self: stretch;
                                                         -ms-flex-item-align: stretch;
                                                         align-self: stretch;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
                                                         -webkit-flex-shrink: 0;
                                                         -ms-flex-negative: 0;
@@ -920,6 +1255,8 @@
                                                 <div class=" css-1wy0on6">
                                                     <style data-emotion="css 1okebmr-indicatorSeparator">
                                                         .css-1okebmr-indicatorSeparator {
+                                                            -webkit-align-self: stretch;
+                                                            -ms-flex-item-align: stretch;
                                                             align-self: stretch;
                                                             background-color: hsl(0, 0%, 80%);
                                                             margin-bottom: 8px;
@@ -932,6 +1269,9 @@
                                                     <style data-emotion="css tlfecz-indicatorContainer">
                                                         .css-tlfecz-indicatorContainer {
                                                             color: hsl(0, 0%, 80%);
+                                                            display: -webkit-box;
+                                                            display: -webkit-flex;
+                                                            display: -ms-flexbox;
                                                             display: flex;
                                                             padding: 8px;
                                                             -webkit-transition: color 150ms;
@@ -990,6 +1330,9 @@
                                                 class="css-7pg0cj-a11yText"></span>
                                             <style data-emotion="css yk16xz-control">
                                                 .css-yk16xz-control {
+                                                    -webkit-align-items: center;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
                                                     align-items: center;
                                                     background-color: hsl(0, 0%, 100%);
                                                     border-color: hsl(0, 0%, 80%);
@@ -997,12 +1340,21 @@
                                                     border-style: solid;
                                                     border-width: 1px;
                                                     cursor: default;
+                                                    display: -webkit-box;
+                                                    display: -webkit-flex;
+                                                    display: -ms-flexbox;
                                                     display: flex;
+                                                    -webkit-box-flex-wrap: wrap;
+                                                    -webkit-flex-wrap: wrap;
+                                                    -ms-flex-wrap: wrap;
                                                     flex-wrap: wrap;
+                                                    -webkit-box-pack: justify;
+                                                    -webkit-justify-content: space-between;
                                                     justify-content: space-between;
                                                     min-height: 38px;
                                                     outline: 0 !important;
                                                     position: relative;
+                                                    -webkit-transition: all 100ms;
                                                     transition: all 100ms;
                                                     box-sizing: border-box;
                                                 }
@@ -1014,11 +1366,23 @@
                                             <div class=" css-yk16xz-control">
                                                 <style data-emotion="css 1hwfws3">
                                                     .css-1hwfws3 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
+                                                        -webkit-flex: 1;
+                                                        -ms-flex: 1;
                                                         flex: 1;
+                                                        -webkit-box-flex-wrap: wrap;
+                                                        -webkit-flex-wrap: wrap;
+                                                        -ms-flex-wrap: wrap;
                                                         flex-wrap: wrap;
                                                         padding: 2px 8px;
+                                                        -webkit-overflow-scrolling: touch;
                                                         position: relative;
                                                         overflow: hidden;
                                                         box-sizing: border-box;
@@ -1032,6 +1396,9 @@
                                                             margin-right: 2px;
                                                             position: absolute;
                                                             top: 50%;
+                                                            -webkit-transform: translateY(-50%);
+                                                            -moz-transform: translateY(-50%);
+                                                            -ms-transform: translateY(-50%);
                                                             transform: translateY(-50%);
                                                             box-sizing: border-box;
                                                         }
@@ -1054,7 +1421,7 @@
                                                                 id="react-select-receiveLocation-input"
                                                                 spellcheck="false" tabindex="0" value=""
                                                                 aria-autocomplete="list"
-                                                                style="box-sizing: content-box; width: 1px; background: none; border: none; font-size: inherit; opacity: 1; outline: none; padding: 0; color: inherit;" />
+                                                                style="box-sizing:content-box;width:1px;label:input;background:0;border:0;font-size:inherit;opacity:1;outline:0;padding:0;color:inherit" />
                                                             <div
                                                                 style="position:absolute;top:0;left:0;visibility:hidden;height:0;overflow:scroll;white-space:pre">
                                                             </div>
@@ -1063,8 +1430,16 @@
                                                 </div>
                                                 <style data-emotion="css 1wy0on6">
                                                     .css-1wy0on6 {
+                                                        -webkit-align-items: center;
+                                                        -webkit-box-align: center;
+                                                        -ms-flex-align: center;
                                                         align-items: center;
+                                                        -webkit-align-self: stretch;
+                                                        -ms-flex-item-align: stretch;
                                                         align-self: stretch;
+                                                        display: -webkit-box;
+                                                        display: -webkit-flex;
+                                                        display: -ms-flexbox;
                                                         display: flex;
                                                         -webkit-flex-shrink: 0;
                                                         -ms-flex-negative: 0;
@@ -1075,6 +1450,8 @@
                                                 <div class=" css-1wy0on6">
                                                     <style data-emotion="css 1okebmr-indicatorSeparator">
                                                         .css-1okebmr-indicatorSeparator {
+                                                            -webkit-align-self: stretch;
+                                                            -ms-flex-item-align: stretch;
                                                             align-self: stretch;
                                                             background-color: hsl(0, 0%, 80%);
                                                             margin-bottom: 8px;
@@ -1087,6 +1464,9 @@
                                                     <style data-emotion="css tlfecz-indicatorContainer">
                                                         .css-tlfecz-indicatorContainer {
                                                             color: hsl(0, 0%, 80%);
+                                                            display: -webkit-box;
+                                                            display: -webkit-flex;
+                                                            display: -ms-flexbox;
                                                             display: flex;
                                                             padding: 8px;
                                                             -webkit-transition: color 150ms;
@@ -1186,8 +1566,7 @@
                             <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
                                 <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
                                     <div class="image">
-                                        <img src="https://vietpost.com.au/_next/static/global-aa53b2fc3cdf21a31acd48787549c44f.svg"
-                                            alt="" />
+                                        <img src="/_next/static/global-aa53b2fc3cdf21a31acd48787549c44f.svg" alt="" />
                                     </div>
                                     <div class="text-bold mt-3">Nhiều điểm gửi hàng</div>
                                     <div class="mt-3">Công ty có hệ thống đại lý gom hàng ở tất cả các tiểu bang của Úc.
@@ -1197,8 +1576,7 @@
                             <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
                                 <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
                                     <div class="image">
-                                        <img src="https://vietpost.com.au/_next/static/cost-13d0121319ef94ccabca06dc636fd848.svg"
-                                            alt="" />
+                                        <img src="/_next/static/cost-13d0121319ef94ccabca06dc636fd848.svg" alt="" />
                                     </div>
                                     <div class="text-bold mt-3">Cước phí cạnh tranh</div>
                                     <div class="mt-3">Vận chuyển bằng máy bay chuyên dụng, kết hợp mạng lưới vận chuyển
@@ -1209,8 +1587,7 @@
                             <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
                                 <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
                                     <div class="image">
-                                        <img src="https://vietpost.com.au/_next/static/payment-248583dfc45304c823157e186f4f8300.svg"
-                                            alt="" />
+                                        <img src="/_next/static/payment-248583dfc45304c823157e186f4f8300.svg" alt="" />
                                     </div>
                                     <div class="text-bold mt-3">Thanh toán an toàn, linh hoạt</div>
                                     <div class="mt-3">Đa dạng các phương thức thanh toán: chuyển khoản, visa, trực
@@ -1220,8 +1597,7 @@
                             <div class="col-12 col-sm-6 col-lg-3 pl-0 pr-3 mb-3 d-flex align-items-stretch">
                                 <div class="delivery-item text-center cursor-pointer p-3 p-lg-4 p-xl-5">
                                     <div class="image">
-                                        <img src="https://vietpost.com.au/_next/static/tracking-18c8c3e5b6d311d85f1d0dd595b73738.svg"
-                                            alt="" />
+                                        <img src="/_next/static/tracking-18c8c3e5b6d311d85f1d0dd595b73738.svg" alt="" />
                                     </div>
                                     <div class="text-bold mt-3">Kiểm soát hành trình vận đơn</div>
                                     <div class="mt-3">Thông tin đến khách hàng hành trình của vận đơn tại từng trạm
@@ -1252,11 +1628,11 @@
                                             </div>
                                             <div class="send-process-item px-3 pb-3">
                                                 <div class="image text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/logon-11b32ac084a6dbd2cf42c3e673b28edb.svg"
+                                                    <img src="/_next/static/logon-11b32ac084a6dbd2cf42c3e673b28edb.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="sign text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/multiply-581c8ebba42ea0be11135f66afe59cc3.svg"
+                                                    <img src="/_next/static/multiply-581c8ebba42ea0be11135f66afe59cc3.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="text-bold mt-3">Đăng ký tài khoản</div>
@@ -1271,7 +1647,8 @@
                                                 </div>
                                                 <div class="mt-3 text-center">
                                                     <a class="btn btn-secondary text-bold text-uppercase py-2"
-                                                        href="#">Đăng ký tài khoản</a>
+                                                        href="https://vietpost.com.au/auth/register?returnUrl=">Đăng ký
+                                                        tài khoản</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1283,11 +1660,11 @@
                                             </div>
                                             <div class="send-process-item px-3 pb-3">
                                                 <div class="image text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/check-list-c7130f794082ca7be233cf20e18590b3.svg"
+                                                    <img src="/_next/static/check-list-c7130f794082ca7be233cf20e18590b3.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="sign text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                    <img src="/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="text-bold mt-3">Khai báo hàng gửi</div>
@@ -1322,11 +1699,11 @@
                                             </div>
                                             <div class="send-process-item px-3 pb-3">
                                                 <div class="image text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/payment-hand-b3473d462a8ee325bf622c7bafc84cfd.svg"
+                                                    <img src="/_next/static/payment-hand-b3473d462a8ee325bf622c7bafc84cfd.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="sign text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                    <img src="/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="text-bold mt-3">Thanh toán</div>
@@ -1354,11 +1731,11 @@
                                             </div>
                                             <div class="send-process-item px-3 pb-3">
                                                 <div class="image text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/transport-car-572e0606e5218054a1205cc7275158c5.svg"
+                                                    <img src="/_next/static/transport-car-572e0606e5218054a1205cc7275158c5.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="sign text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                    <img src="/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="text-bold mt-3">Gửi hàng</div>
@@ -1387,11 +1764,11 @@
                                             </div>
                                             <div class="send-process-item px-3 pb-3">
                                                 <div class="image text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/receive-014a476ed64a0543f660c259c5cdc484.svg"
+                                                    <img src="/_next/static/receive-014a476ed64a0543f660c259c5cdc484.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="sign text-center mt-3">
-                                                    <img src="https://vietpost.com.au/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
+                                                    <img src="/_next/static/plus-be8ee6bcf9b10efd17b7066c93f6e48a.svg"
                                                         alt="" />
                                                 </div>
                                                 <div class="text-bold mt-3">Nhận hàng tại Việt Nam</div>
@@ -1426,8 +1803,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-3 offset-md-0">
                         <div class="intro">
-                            <img src="https://vietpost.com.au/_next/static/logo-header-d003d2174319c9c12a4071ecb632a963.svg"
-                                alt="" />
+                            <img src="/_next/static/logo-header-d003d2174319c9c12a4071ecb632a963.svg" alt="" />
                             <div class="desc">Vietpost là dịch vụ Thương mại điện tử &amp;Logistic của Vpost. Đây là
                                 dịch vụ vận chuyển quốc tế mang đến cho bạn lựa chọn mua sắm thoải mái và chuyển các mặt
                                 hàng từ các cửa hàng của Úc, Trung Quốc, Nhật Bản, Châu Âu và Hoa Kỳ về Việt Nam với mức
@@ -1438,37 +1814,34 @@
                         <div class="heading">Chính sách</div>
                         <ul class="list-unstyled links-list">
                             <li>
-                                <a class="gf-link" href="#">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                <a class="gf-link" href="https://vietpost.com.au/help/chinh-sach-den-bu">
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Chính sách đền bù</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="#">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                <a class="gf-link" href="https://www.shirogane.vn">
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Vận chuyển Việt - Úc</span>
                                 </a>
-                            </li>S
+                            </li>
                             <li>
-                                <a class="gf-link" href="#">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                <a class="gf-link"
+                                    href="https://vietpost.com.au/help/huong-dan-dang-ky-tai-khoan-tren-vietpostcomau">
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Hướng dẫn đăng ký tài khoản</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="#">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                <a class="gf-link"
+                                    href="https://vietpost.com.au/help/huong-dan-tao-van-don-tai-vietpostcomau">
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Hướng dẫn tạo vận đơn</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="#">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                <a class="gf-link" href="https://vietpost.com.au/help/quy-dinh-chung">
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Chính sách riêng tư</span>
                                 </a>
                             </li>
@@ -1479,29 +1852,25 @@
                         <ul class="list-unstyled links-list">
                             <li>
                                 <a class="gf-link" href="https://zalo.me/g/zaqhuu493">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Group hỗ trợ zalo</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="gf-link" href="https://tocamart.com">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Dịch vụ Order hàng Úc</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="gf-link" href="/#how-it-works">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Phương thức hoạt động</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="gf-link" href="/#about-us">
-                                    <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg"
-                                        alt="" />
+                                    <img src="/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Giới thiệu về Vietpost</span>
                                 </a>
                             </li>
@@ -1520,8 +1889,9 @@
                             <p>
                                 Email:
                                 <!-- -->
-                                <a href="#" class="__cf_email__"
-                                    data-cfemail="721d1c1e1b1c1732041b1706021d01065c111d1f5c1307">essg@gmail.com</a>
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="c3acadafaaada683b5aaa6b7b3acb0b7eda0acaeeda2b6">[email
+                                    &#160;protected]</a>
                             </p>
                             <p>8am to 6pm</p>
                             <p>7 Days a Week</p>
@@ -1529,26 +1899,643 @@
                     </div>
                 </div>
                 <div class="col-12 payment">
-                    <img src="https://vietpost.com.au/_next/static/visa-14b038ba4bc83aa4cb762a85c87652ea.svg"
-                        alt="Visa" />
-                    <img src="https://vietpost.com.au/_next/static/mastercard-292021d0fa9109e19ed85e37f54143c8.svg"
-                        alt="Visa" />
-                    <img src="https://vietpost.com.au/_next/static/paypal-4d8f620a87eb3a2748cce6c788c88627.svg"
-                        alt="Visa" />
+                    <img src="/_next/static/visa-14b038ba4bc83aa4cb762a85c87652ea.svg" alt="Visa" />
+                    <img src="/_next/static/mastercard-292021d0fa9109e19ed85e37f54143c8.svg" alt="Visa" />
+                    <img src="/_next/static/paypal-4d8f620a87eb3a2748cce6c788c88627.svg" alt="Visa" />
                 </div>
                 <div class="col-12 col-sm-8 offset-sm-2 col-md-3 offset-md-9 share">
-                    <img src="https://vietpost.com.au/_next/static/facebook-6909aae3cd905604189e27e2d47facda.svg"
-                        alt="Facebook" />
-                    <img src="https://vietpost.com.au/_next/static/twitter-ab343e12db6f3e59ed0fef9338c5cc1a.svg"
-                        alt="Twitter" />
-                    <img src="https://vietpost.com.au/_next/static/linked-in-1e9e773028fcbc2b1b3db43402e7e849.svg"
-                        alt="Linked In" />
-                    <img src="https://vietpost.com.au/_next/static/instargram-a926322e396c031ffaf7708af6a95f45.svg"
-                        alt="Instagram" />
+                    <img src="/_next/static/facebook-6909aae3cd905604189e27e2d47facda.svg" alt="Facebook" />
+                    <img src="/_next/static/twitter-ab343e12db6f3e59ed0fef9338c5cc1a.svg" alt="Twitter" />
+                    <img src="/_next/static/linked-in-1e9e773028fcbc2b1b3db43402e7e849.svg" alt="Linked In" />
+                    <img src="/_next/static/instargram-a926322e396c031ffaf7708af6a95f45.svg" alt="Instagram" />
                 </div>
             </div>
         </footer>
+        <div class="contact-buttons">
+            <div class="mb-call">
+                <a target="_blank" rel="noreferrer" href="tel:0451818366" class="text-white">
+                    <i class="far fa-phone"></i>
+                </a>
+            </div>
+            <div class="fb-chat">
+                <a target="_blank" rel="noreferrer" href="https://m.me/108185567777127">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19.999">
+                        <path
+                            d="M10 0A9.649 9.649 0 000 9.7a9.455 9.455 0 003.14 7.17.794.794 0 01.27.57l.05 1.78a.811.811 0 001.13.71l1.98-.87A1.077 1.077 0 017.1 19a10.211 10.211 0 002.9.4A9.7 9.7 0 1010 0m6 7.46l-2.93 4.67a1.486 1.486 0 01-2.17.37l-2.34-1.73a.6.6 0 00-.72 0l-3.16 2.4a.469.469 0 01-.68-.63l2.93-4.67a1.515 1.515 0 012.17-.4l2.34 1.76a.6.6 0 00.72 0l3.16-2.4a.469.469 0 01.68.63z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script id="__NEXT_DATA__" type="application/json">
+            {
+                "props": {
+                    "pageProps": {
+                        "pageData": {
+                            "banners": [
+                                {
+                                    "id": "1472748913906679808",
+                                    "name": "giao nhan",
+                                    "href": null,
+                                    "photo": {
+                                        "key": "{\"small\":\"2021/12/20/d9b25920-38ac-4233-b274-ae084887c546.jpg\",\"medium\":\"2021/12/20/ab0c5f1d-b0f2-4b54-a3d7-6b2a3548f18b.jpg\",\"large\":\"2021/12/20/5cc38295-6173-4d59-9935-078f76f5f9e2.jpg\"}",
+                                        "small": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/d9b25920-38ac-4233-b274-ae084887c546.jpg",
+                                            "dimension": {
+                                                "width": 640,
+                                                "height": 267
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/ab0c5f1d-b0f2-4b54-a3d7-6b2a3548f18b.jpg",
+                                            "dimension": {
+                                                "width": 1280,
+                                                "height": 533
+                                            }
+                                        },
+                                        "large": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/5cc38295-6173-4d59-9935-078f76f5f9e2.jpg",
+                                            "dimension": {
+                                                "width": 1920,
+                                                "height": 800
+                                            }
+                                        }
+                                    },
+                                    "position": "SLIDE"
+                                },
+                                {
+                                    "id": "1472749101077495808",
+                                    "name": "64 tinh",
+                                    "href": null,
+                                    "photo": {
+                                        "key": "{\"small\":\"2022/2/23/8b0fdb05-c38e-4475-81f7-605dda55689d.jpg\",\"medium\":\"2022/2/23/fd10d1fb-e760-47ae-aa4c-29e6b5977f1e.jpg\",\"large\":\"2022/2/23/511dadee-10a2-4e36-ad0b-b3458328bbab.jpg\"}",
+                                        "small": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/8b0fdb05-c38e-4475-81f7-605dda55689d.jpg",
+                                            "dimension": {
+                                                "width": 640,
+                                                "height": 267
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/fd10d1fb-e760-47ae-aa4c-29e6b5977f1e.jpg",
+                                            "dimension": {
+                                                "width": 1280,
+                                                "height": 533
+                                            }
+                                        },
+                                        "large": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/511dadee-10a2-4e36-ad0b-b3458328bbab.jpg",
+                                            "dimension": {
+                                                "width": 1920,
+                                                "height": 800
+                                            }
+                                        }
+                                    },
+                                    "position": "SLIDE"
+                                },
+                                {
+                                    "id": "1472750088395685888",
+                                    "name": "kho hang",
+                                    "href": null,
+                                    "photo": {
+                                        "key": "{\"small\":\"2021/12/20/ae13f83d-d330-4c9a-b8ec-41c17ede7804.jpg\",\"medium\":\"2021/12/20/74b08fa8-9034-4234-ae96-da38a2cd4efc.jpg\",\"large\":\"2021/12/20/3a736b1e-895d-4905-874c-9e4bf97a7500.jpg\"}",
+                                        "small": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/ae13f83d-d330-4c9a-b8ec-41c17ede7804.jpg",
+                                            "dimension": {
+                                                "width": 640,
+                                                "height": 267
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/74b08fa8-9034-4234-ae96-da38a2cd4efc.jpg",
+                                            "dimension": {
+                                                "width": 1280,
+                                                "height": 533
+                                            }
+                                        },
+                                        "large": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2021/12/20/3a736b1e-895d-4905-874c-9e4bf97a7500.jpg",
+                                            "dimension": {
+                                                "width": 1920,
+                                                "height": 800
+                                            }
+                                        }
+                                    },
+                                    "position": "SLIDE"
+                                },
+                                {
+                                    "id": "1496418454637383680",
+                                    "name": "63",
+                                    "href": null,
+                                    "photo": {
+                                        "key": "{\"small\":\"2022/2/23/9f234da5-0d0c-4f47-849f-8ced3f38f76e.jpg\",\"medium\":\"2022/2/23/8876ba54-97fa-4ee6-b36e-afa51647dd0d.jpg\",\"large\":\"2022/2/23/2c525b94-d9a9-4da5-ab60-ad66e18d5ec2.jpg\"}",
+                                        "small": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/9f234da5-0d0c-4f47-849f-8ced3f38f76e.jpg",
+                                            "dimension": {
+                                                "width": 640,
+                                                "height": 267
+                                            }
+                                        },
+                                        "medium": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/8876ba54-97fa-4ee6-b36e-afa51647dd0d.jpg",
+                                            "dimension": {
+                                                "width": 1280,
+                                                "height": 533
+                                            }
+                                        },
+                                        "large": {
+                                            "url": "https://static.vietpost.com.au/static-vietpost/public/banner/photo/2022/2/23/2c525b94-d9a9-4da5-ab60-ad66e18d5ec2.jpg",
+                                            "dimension": {
+                                                "width": 1920,
+                                                "height": 800
+                                            }
+                                        }
+                                    },
+                                    "position": "SLIDE"
+                                }
+                            ],
+                            "sendingSteps": [
+                                {
+                                    "id": "1473936302914146304",
+                                    "name": "Đăng ký tài khoản",
+                                    "description": "\u003cp\u003e\u003cspan style=\"color: rgb(33, 37, 41); font-size: 14px;\"\u003eQuý khách cần đăng ký một tài khoản online trên website trước khi thực hiện tạo vận đơn\u003c/span\u003e\u003c/p\u003e",
+                                    "showButton": true,
+                                    "buttonTitle": "Đăng ký tài khoản",
+                                    "buttonLink": "https://vietpost.com.au/auth/register?returnUrl=",
+                                    "photoUrl": "https://static.vietpost.com.au/static-vietpost/public/content-photo/2021/12/23/502fd067-5680-43f8-ab09-c6b8a0cd1f28.jpg"
+                                },
+                                {
+                                    "id": "1473937267419516928",
+                                    "name": "Khai báo hàng gửi",
+                                    "description": "\u003cp\u003e\u003cspan style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003eSau khi mở tài khoản online thành công, Quý khách cần \u003c/span\u003e\u003ca href=\"https://vp2-web.faskera.com/auth/login\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003e\u003cstrong\u003eĐĂNG NHẬP (Login)\u003c/strong\u003e v\u003c/a\u003e\u003cspan style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003eào tài khoản của bạn rồi thực hiện khai báo gửi hàng (thông tin người gửi, thông tin người nhận, danh sách hàng gửi, thông tin về kiện hàng gửi, ...) theo mẫu form đã cung cấp sẵn.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e",
+                                    "showButton": false,
+                                    "buttonTitle": null,
+                                    "buttonLink": null,
+                                    "photoUrl": "https://static.vietpost.com.au/static-vietpost/public/content-photo/2021/12/23/9bba63a7-5e7a-4a78-bb10-b44f10d62053.jpg"
+                                },
+                                {
+                                    "id": "1473938207509843968",
+                                    "name": "Thanh toán",
+                                    "description": "\u003cp\u003e\u003cspan style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003eQuý khách sẽ nhận được 01 thông gửi hàng từ công ty qua email. Nếu không có thắc mắc gì về vận đơn thì bạn thực hiện thanh toán tiền vận chuyển qua hình thức chuyển khoản hoặc Quý khách có thể trả tiền mặt ở nơi gửi/Pick hàng(Nếu địa chỉ gửi hàng của bạn nằm trong khu vực hỗ trợ pick hàng hoặc có đại lý thu gom của Vietpost)\u003c/span\u003e\u003c/p\u003e",
+                                    "showButton": false,
+                                    "buttonTitle": null,
+                                    "buttonLink": null,
+                                    "photoUrl": "https://static.vietpost.com.au/static-vietpost/public/content-photo/2021/12/23/0f5ac90b-518e-4f6e-b71a-0837bc5eb480.jpg"
+                                },
+                                {
+                                    "id": "1473939232413192192",
+                                    "name": "Gửi hàng",
+                                    "description": "\u003cp\u003e\u003cspan style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003eHàng hóa cần được đóng gói cẩn thận trước khi đem đi gửi đến điểm gom hàng/Kho Sydney của Vietpost hoặc giao cho nhân viên pick hàng tại địa điểm gửi hàng của quý khách. Vui lòng tham khảo quy cách đóng gói của Vietpost\u003c/span\u003e\u003c/p\u003e",
+                                    "showButton": true,
+                                    "buttonTitle": "Quy cách đóng gói",
+                                    "buttonLink": "https://www.shirogane.vn/",
+                                    "photoUrl": "https://static.vietpost.com.au/static-vietpost/public/content-photo/2021/12/23/50f8d93f-1243-4676-8f52-debad1dde1ce.jpg"
+                                },
+                                {
+                                    "id": "1473940004114796544",
+                                    "name": "Nhận hàng tại Việt Nam",
+                                    "description": "\u003cp\u003e\u003cspan style=\"font-size: 14px; color: rgb(33, 37, 41);\"\u003eHàng sẽ được giao cho người nhận từ 7 – 10 ngày làm việc (tùy theo vị trí địa lý) kể từ ngày hàng lên máy bay rời khỏi Úc. Quý khách có thể theo dõi kiện hàng của mình trực tiếp trên website của công ty. Hệ thống sẽ tự động cập nhật thông tin đến email của quý khách về các trạng thái, lịch trình của vận đơn\u003c/span\u003e\u003c/p\u003e",
+                                    "showButton": false,
+                                    "buttonTitle": null,
+                                    "buttonLink": null,
+                                    "photoUrl": "https://static.vietpost.com.au/static-vietpost/public/content-photo/2021/12/23/d924d046-8831-4b1a-ae58-a7dc5d2272cf.jpg"
+                                }
+                            ],
+                            "aboutUs": "\u003cp\u003e\u003cem\u003eTại Vietpost, sứ mệnh của chúng tôi là cung cấp dịch vụ vận chuyển xuất sắc cho khách hàng và chúng tôi tự hào về sự chuyên nghiệp, tận tâm của mình.\u003c/em\u003e\u003c/p\u003e\u003cp\u003e\u003cem\u003ePhạm vi dịch vụ của chúng tôi bao gồm nhưng không giới hạn các dịch vụ chuyển phát hàng hóa quốc tế, chuyển tiếp hàng hóa, vận chuyển hàng thương mại điện tử.... Đặc biệt, chúng tôi được ra đời nhằm đáp ứng nhu cầu vận chuyển hàng hóa từ Úc về Việt nam cho các kiều bào, du học sinh đang sinh sống tại Úc cũng như những khách hàng đang ở tại Việt Nam và có nhu cầu sử dụng, vận chuyển hàng hóa từ Úc về đến Việt Nam\u003c/em\u003e\u003c/p\u003e\u003cp\u003e\u003cem\u003ePhương châm của Vietpost là lấy chữ TÍN trong kinh doanh là yếu tố đặc biệt quan trọng góp phần thành công của chúng tôi và để luôn đảm bảo quyền lợi của khách hàng.\u003c/em\u003e\u003c/p\u003e",
+                            "auRegions": [
+                                {
+                                    "id": "191010091924610-434",
+                                    "name": "New South Wales",
+                                    "zipCode": null
+                                }
+                            ],
+                            "vnRegions": [
+                                {
+                                    "id": "191010084858668-362",
+                                    "name": "Đồng Tháp",
+                                    "zipCode": "​81000"
+                                },
+                                {
+                                    "id": "191010084858668-361",
+                                    "name": "Đồng Nai",
+                                    "zipCode": "​76000"
+                                },
+                                {
+                                    "id": "191010084858668-360",
+                                    "name": "Điện Biên",
+                                    "zipCode": "​32000"
+                                },
+                                {
+                                    "id": "191010084858668-359",
+                                    "name": "Đắk Nông",
+                                    "zipCode": "​65000"
+                                },
+                                {
+                                    "id": "191010084858668-358",
+                                    "name": "Đắk Lắk",
+                                    "zipCode": "63000"
+                                },
+                                {
+                                    "id": "191010084858668-357",
+                                    "name": "Đà Nẵng",
+                                    "zipCode": "​50000"
+                                },
+                                {
+                                    "id": "191010084858668-405",
+                                    "name": "Yên Bái",
+                                    "zipCode": "​33000"
+                                },
+                                {
+                                    "id": "191010084858668-404",
+                                    "name": "Vĩnh Phúc",
+                                    "zipCode": "​15000"
+                                },
+                                {
+                                    "id": "191010084858668-403",
+                                    "name": "Vĩnh Long",
+                                    "zipCode": "​85000"
+                                },
+                                {
+                                    "id": "191010084858668-402",
+                                    "name": "Tuyên Quang",
+                                    "zipCode": "​22000"
+                                },
+                                {
+                                    "id": "191010084858668-401",
+                                    "name": "Trà Vinh",
+                                    "zipCode": "​87000"
+                                },
+                                {
+                                    "id": "191010084858668-400",
+                                    "name": "Tiền Giang",
+                                    "zipCode": "​84000"
+                                },
+                                {
+                                    "id": "191010084858668-399",
+                                    "name": "Thừa Thiên-Huế",
+                                    "zipCode": "​49000"},
+                                    {
+                                        "id": "191010084858668-372",
+                                        "name": "Thành phố Hồ Chí Minh",
+                                        "zipCode": "​70000"
+                                    },
+                                    {
+                                        "id": "191010084858668-398",
+                                        "name": "Thanh Hoá",
+                                        "zipCode": "​40000"
+                                    },
+                                    {
+                                        "id": "191010084858668-397",
+                                        "name": "Thái Nguyên",
+                                        "zipCode": "24000"
+                                    },
+                                    {
+                                        "id": "191010084858668-396",
+                                        "name": "Thái Bình",
+                                        "zipCode": "6000"
+                                    },
+                                    {
+                                        "id": "191010084858668-395",
+                                        "name": "Tây Ninh",
+                                        "zipCode": "​80000"
+                                    },
+                                    {
+                                        "id": "191010084858668-394",
+                                        "name": "Sơn La",
+                                        "zipCode": "​34000"
+                                    },
+                                    {
+                                        "id": "191010084858668-393",
+                                        "name": "Sóc Trăng",
+                                        "zipCode": "​96000"
+                                    },
+                                    {
+                                        "id": "191010084858668-392",
+                                        "name": "Quảng Trị",
+                                        "zipCode": "​48000"
+                                    },
+                                    {
+                                        "id": "191010084858668-391",
+                                        "name": "Quảng Ninh",
+                                        "zipCode": "1000"
+                                    },
+                                    {
+                                        "id": "191010084858668-390",
+                                        "name": "Quảng Ngãi",
+                                        "zipCode": "​53000"
+                                    },
+                                    {
+                                        "id": "191010084858668-389",
+                                        "name": "Quảng Nam",
+                                        "zipCode": "​51000"
+                                    },
+                                    {
+                                        "id": "191010084858668-388",
+                                        "name": "Quảng Bình",
+                                        "zipCode": "​47000"
+                                    },
+                                    {
+                                        "id": "191010084858668-387",
+                                        "name": "Phú Yên",
+                                        "zipCode": "56000"
+                                    },
+                                    {
+                                        "id": "191010084858668-386",
+                                        "name": "Phú Thọ",
+                                        "zipCode": "​35000"
+                                    },
+                                    {
+                                        "id": "191010084858668-385",
+                                        "name": "Ninh Thuận",
+                                        "zipCode": "​59000"
+                                    },
+                                    {
+                                        "id": "191010084858668-384",
+                                        "name": "Ninh Bình",
+                                        "zipCode": "​08000"
+                                    },
+                                    {
+                                        "id": "191010084858668-383",
+                                        "name": "Nghệ An",
+                                        "zipCode": "​43000"
+                                    },
+                                    {
+                                        "id": "191010084858668-382",
+                                        "name": "Nam Định",
+                                        "zipCode": "​07000"
+                                    },
+                                    {
+                                        "id": "191010084858668-381",
+                                        "name": "Long An",
+                                        "zipCode": "​82000"
+                                    },
+                                    {
+                                        "id": "191010084858668-379",
+                                        "name": "Lào Cai",
+                                        "zipCode": "31000"
+                                    },
+                                    {
+                                        "id": "191010084858668-378",
+                                        "name": "Lạng Sơn",
+                                        "zipCode": "​25000"
+                                    },
+                                    {
+                                        "id": "191010084858668-380",
+                                        "name": "Lâm Đồng",
+                                        "zipCode": "​66000"
+                                    },
+                                    {
+                                        "id": "191010084858668-377",
+                                        "name": "Lai Châu",
+                                        "zipCode": "30000"
+                                    },
+                                    {
+                                        "id": "191010084858668-376",
+                                        "name": "Kon Tum",
+                                        "zipCode": "​60000"
+                                    },
+                                    {
+                                        "id": "191010084858668-375",
+                                        "name": "Kiên Giang",
+                                        "zipCode": "​91000"
+                                    },
+                                    {
+                                        "id": "191010084858668-374",
+                                        "name": "Khánh Hoà",
+                                        "zipCode": "​57000"
+                                    },
+                                    {
+                                        "id": "191010084858668-373",
+                                        "name": "Hưng Yên",
+                                        "zipCode": "​17000"
+                                    },
+                                    {
+                                        "id": "191010084858668-371",
+                                        "name": "Hòa Bình",
+                                        "zipCode": "​36000"
+                                    },
+                                    {
+                                        "id": "191010084858668-370",
+                                        "name": "Hậu Giang",
+                                        "zipCode": "​95000"
+                                    },
+                                    {
+                                        "id": "191010084858668-369",
+                                        "name": "Hải Phòng",
+                                        "zipCode": "​04000"
+                                    },
+                                    {
+                                        "id": "191010084858668-368",
+                                        "name": "Hải Dương",
+                                        "zipCode": "​03000"
+                                    },
+                                    {
+                                        "id": "191010084858668-367",
+                                        "name": "Hà Tĩnh",
+                                        "zipCode": "​45000"
+                                    },
+                                    {
+                                        "id": "191010084858668-366",
+                                        "name": "Hà Nội",
+                                        "zipCode": "10000"
+                                    },
+                                    {
+                                        "id": "191010084858668-365",
+                                        "name": "Hà Nam",
+                                        "zipCode": "​18000"
+                                    },
+                                    {
+                                        "id": "191010084858668-364",
+                                        "name": "Hà Giang",
+                                        "zipCode": "​20000"
+                                    },
+                                    {
+                                        "id": "191010084858668-363",
+                                        "name": "Gia Lai",
+                                        "zipCode": "61000"
+                                    },
+                                    {
+                                        "id": "191010084858668-355",
+                                        "name": "Cao Bằng",
+                                        "zipCode": "​21000"
+                                    },
+                                    {
+                                        "id": "191010084858668-356",
+                                        "name": "Cần Thơ",
+                                        "zipCode": "​94000"
+                                    },
+                                    {
+                                        "id": "191010084858668-354",
+                                        "name": "Cà Mau",
+                                        "zipCode": "​98000"
+                                    },
+                                    {
+                                        "id": "191010084858668-351",
+                                        "name": "Bình Định",
+                                        "zipCode": "55000"
+                                    },
+                                    {
+                                        "id": "191010084858668-353",
+                                        "name": "Bình Thuận",
+                                        "zipCode": "​77000"
+                                    },
+                                    {
+                                        "id": "191010084858668-352",
+                                        "name": "Bình Phước",
+                                        "zipCode": "67000"
+                                    },
+                                    {
+                                        "id": "191010084858668-350",
+                                        "name": "Bình Dương",
+                                        "zipCode": "75000"
+                                    },
+                                    {
+                                        "id": "191010084858668-349",
+                                        "name": "Bến Tre",
+                                        "zipCode": "86000"
+                                    },
+                                    {
+                                        "id": "191010084858668-348",
+                                        "name": "Bắc Ninh",
+                                        "zipCode": "16000"
+                                    },
+                                    {
+                                        "id": "191010084858668-345",
+                                        "name": "Bạc Liêu",
+                                        "zipCode": "97000"
+                                    },
+                                    {
+                                        "id": "191010084858668-346",
+                                        "name": "Bắc Kạn",
+                                        "zipCode": "23000"
+                                    },
+                                    {
+                                        "id": "191010084858668-347",
+                                        "name": "Bắc Giang",
+                                        "zipCode": "26000"
+                                    },
+                                    {
+                                        "id": "191010084858668-344",
+                                        "name": "Bà Rịa-Vũng Tàu",
+                                        "zipCode": "78000"
+                                    },
+                                    {
+                                        "id": "191010084858668-343",
+                                        "name": "An Giang",
+                                        "zipCode": "90000"
+                                    }
+                                ]
+                            },
+                            "appData": {
+                                "config": {
+                                    "facebookAppId": "155011878546726",
+                                    "facebookPageId": "108185567777127",
+                                    "defaultOgImageUrl": "https://vietpost.com.au/default-og-image.jpg",
+                                    "recaptchaSiteKey": "6Le2r6wdAAAAAPWbu-W1qoDopqLVBELLJ25Edyvi",
+                                    "hotlines": [
+                                        {
+                                            "name": "Sydney: Mr Cương",
+                                            "mobile": "0451818366"
+                                        },
+                                        {
+                                            "name": "Melbourne: Mrs Nga",
+                                            "mobile": "0435812855"
+                                        },
+                                        {
+                                            "name": "Brisbane: Mrs Linh",
+                                            "mobile": "0403435478"
+                                        },
+                                        {
+                                            "name": "Perth: Mrs NANA",
+                                            "mobile": "0413626599"
+                                        },
+                                        {
+                                            "name": "Hỗ trợ chung (WhatsApp - Việt Nam)",
+                                            "mobile": "0966735678"
+                                        }
+                                    ],
+                                    "emails": [
+                                        "online@vietpost.com.au"
+                                    ]
+                                },
+                                "links": [
+                                    {
+                                        "title": "Chính sách đền bù",
+                                        "url": "https://vietpost.com.au/help/chinh-sach-den-bu",
+                                        "type": "CUSTOMER_SUPPORT",
+                                        "seqNo": 1
+                                    },
+                                    {
+                                        "title": "Group hỗ trợ zalo",
+                                        "url": "https://zalo.me/g/zaqhuu493",
+                                        "type": "ABOUT_US",
+                                        "seqNo": 9
+                                    },
+                                    {
+                                        "title": "Vận chuyển Việt - Úc",
+                                        "url": "https://www.shirogane.vn",
+                                        "type": "CUSTOMER_SUPPORT",
+                                        "seqNo": 6
+                                    },
+                                    {
+                                        "title": "Dịch vụ Order hàng Úc",
+                                        "url": "https://tocamart.com",
+                                        "type": "ABOUT_US",
+                                        "seqNo": 3
+                                    },
+                                    {
+                                        "title": "Hướng dẫn đăng ký tài khoản",
+                                        "url": "https://vietpost.com.au/help/huong-dan-dang-ky-tai-khoan-tren-vietpostcomau",
+                                        "type": "CUSTOMER_SUPPORT",
+                                        "seqNo": 1
+                                    },
+                                    {
+                                        "title": "Hướng dẫn tạo vận đơn",
+                                        "url": "https://vietpost.com.au/help/huong-dan-tao-van-don-tai-vietpostcomau",
+                                        "type": "CUSTOMER_SUPPORT",
+                                        "seqNo": 2
+                                    },
+                                    {
+                                        "title": "Chính sách riêng tư",
+                                        "url": "https://vietpost.com.au/help/quy-dinh-chung",
+                                        "type": "CUSTOMER_SUPPORT",
+                                        "seqNo": 1
+                                    },
+                                    {
+                                        "title": "Phương thức hoạt động",
+                                        "url": "/#how-it-works",
+                                        "type": "ABOUT_US",
+                                        "seqNo": 3
+                                    },
+                                    {
+                                        "title": "Giới thiệu về Vietpost",
+                                        "url": "/#about-us",
+                                        "type": "ABOUT_US",
+                                        "seqNo": 5
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "page": "/",
+                    "query": {
+                    },
+                    "buildId": "z9X_BFPUWBEYsJzySMT27",
+                    "runtimeConfig": {
+                        "gtmId": "GTM-WBNTT9D",
+                        "canonicalDomain": "https://vietpost.com.au",
+                        "messengerLink": "https://m.me/108185567777127",
+                        "googleSiteVerification": "W6zNSj4vO4Oc52eij7nux05yQuQEXaNr2oRrQWUbbj0"
+                    },
+                    "isFallback": false,
+                    "customServer": true,
+                    "gip": true,
+                    "appGip": true,
+                    "scriptLoader": [
+                    ]
+                }</script>
 </body>
 
 </html>
