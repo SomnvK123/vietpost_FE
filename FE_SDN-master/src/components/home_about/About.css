@@ -1,39 +1,64 @@
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
 }
 
 .anchor {
-    display: block;
-    height: 94px;
-    margin-top: -94px;
-    visibility: hidden
-  }
-  
-  @media(min-width: 1260px) {
-    .anchor {
-      height: 82px;
-      margin-top: -82px
-    }
-  }
+  display: block;
+  height: 94px;
+  margin-top: -94px;
+  visibility: hidden
+}
 
-  .bg-white {
-    background-color: #fff !important
+@media(min-width: 1260px) {
+  .anchor {
+    height: 82px;
+    margin-top: -82px
   }
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px
-  }
+.bg-white {
+  background-color: #fff !important
+}
 
-  .col-12 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.col-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.text-bold {
+  font-weight: 600 !important
+}
+
+.text-primary {
+  color: #154476 !important
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+  color: #091f35 !important
+}
+
+.font-size-x-large {
+  font-size: 1.5rem
+}
+
+.py-4 {
+  padding-top: 1.5rem!important
+}
+
+.py-4 {
+  padding-bottom: 1.5rem!important
+}
