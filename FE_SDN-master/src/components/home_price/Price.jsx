@@ -181,12 +181,22 @@ const Price = () => {
     const [width, setWidth] = useState('');
     const [height, setHeight] = useState('');
     const [estimatedPrice, setEstimatedPrice] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const calculatePrice = (weight, length, width, height) => {
+        return (parseFloat(weight) + parseFloat(length) + parseFloat(width) + parseFloat(height)) * 10;
+    };
 
     const handleCalculatePrice = () => {
-        // For simplicity, let's assume the price is calculated based on weight * (length + width + height)
-        const calculatedPrice = weight * (parseInt(length) + parseInt(width) + parseInt(height));
+        if (!weight || !length || !width || !height) {
+            setErrorMessage('Please fill in all fields');
+            return;
+        }
+        const calculatedPrice = calculatePrice(weight, length, width, height);
         setEstimatedPrice(calculatedPrice);
+        setErrorMessage('');
     };
+
 
     const provinces = [
         'Hà Nội',
@@ -461,6 +471,7 @@ const Price = () => {
                                     </div>
                                 </div>
                             </div>
+                            {errorMessage && <div className="text-danger">{errorMessage}</div>}
                             <div className="mt-2 mb-3">
                                 <button
                                     type="button"
