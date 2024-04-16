@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from '@emotion/styled';
-import './Price.css';
+// import './Price.css';
 
 // Styled component for the container with class "css-2b097c-container"
 const StyledContainer = styled.div`
@@ -189,29 +189,43 @@ const Price = () => {
     };
 
     const provinces = [
-        'Hanoi',
-        'Ho Chi Minh City',
-        'Da Nang',
-        'Hai Phong',
-        'Can Tho',
-        'Quang Ninh',
-        'Hai Duong',
-        'Thanh Hoa',
-        'Nghe An',
-        'Ha Tinh',
-        'Quang Binh',
-        'Quang Tri'
+        'Hà Nội',
+        'Hồ Chí Minh',
+        'Đà Nẵng',
+        'Hải Phòng',
+        'Cần Thơ',
+        'Quảng Ninh',
+        'Thanh Hóa',
+        'Nghệ An',
+        'Hà Tĩnh',
+        'Đắk Lắk',
+        'Lâm Đồng',
+        'Bình Dương'
     ];
+
+    const states = ['New South Wales'];
+
 
     const [selectedLocation, setSelectedLocation] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
 
-    const handleLocationChange = (e) => {
-        setSelectedLocation(e.target.value);
-    };
-
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
+    };
+
+    const handleLocationChange = (value) => {
+        setSelectedLocation(value);
+    };
+
+    const [selectedLocationn, setSelectedLocationn] = useState('');
+    const [showDropdownn, setShowDropdownn] = useState(false);
+
+    const toggleDropdownn = () => {
+        setShowDropdownn(!showDropdownn);
+    };
+
+    const handleLocationChangee = (value) => {
+        setSelectedLocationn(value);
     };
 
     return (
@@ -240,123 +254,147 @@ const Price = () => {
                             <div className="form-group">
                                 <label className="text-bold">Nơi gửi *</label>
                                 <StyledContainer>
-                                    <InvisibleTextSpan aria-live="polite" aria-atomic="false" aria-relevant="additions text"></InvisibleTextSpan>
-                                    <ControlContainer>
-                                        <InputContainer>
-                                            <div className=" css-1wa3eu0-placeholder"></div>
-                                            <div className="css-1g6gooi">
-                                                <div className="" style={{ display: 'inline-block' }}>
-                                                    <input
-                                                        type="text"
-                                                        autoCapitalize="none"
-                                                        autoComplete="off"
-                                                        autoCorrect="off"
-                                                        id="react-select-sendLocation-input"
-                                                        spellCheck="false"
-                                                        tabIndex="0"
-                                                        value=""
-                                                        aria-autocomplete="list"
-                                                        style={{
-                                                            boxSizing: 'content-box',
-                                                            width: '1px',
-                                                            background: 'none',
-                                                            border: '0',
-                                                            fontSize: 'inherit',
-                                                            opacity: '1',
-                                                            outline: 'none',
-                                                            padding: '0',
-                                                            color: 'inherit'
-                                                        }}
-                                                    />
-                                                    <div style={{ position: 'absolute', top: '0', left: '0', visibility: 'hidden', height: '0', overflow: 'scroll', whiteSpace: 'pre' }}></div>
-                                                </div>
+                                    <div className=" css-1wa3eu0-placeholder"></div>
+                                    <div
+                                        className="css-1g6gooi"
+                                        style={{ position: 'relative', cursor: 'pointer' }}
+                                        onClick={toggleDropdownn}
+                                    >
+                                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                                            <select
+                                                id="react-select-receiveLocation-input"
+                                                tabIndex="0"
+                                                aria-autocomplete="list"
+                                                style={{
+                                                    flex: 1,
+                                                    background: 'none',
+                                                    border: 'none',
+                                                    fontSize: 'inherit',
+                                                    opacity: '0.7',
+                                                    outline: 'none',
+                                                    padding: '0',
+                                                    color: 'inherit'
+                                                }}
+                                                onChange={(e) => handleLocationChangee(e.target.value)}
+                                                value={selectedLocationn}
+                                            >
+                                                <option value=""></option>
+                                                {states.map((state, index) => (
+                                                    <option key={index} value={state}>
+                                                        {state}
+                                                    </option>
+                                                ))}
+                                            </select>
+
+                                            <div
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    marginLeft: '10px'
+                                                }}
+                                            >
+                                                <SvgIcon height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                    <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                </SvgIcon>
                                             </div>
-                                        </InputContainer>
-                                        <IndicatorContainer aria-hidden="true">
-                                            <SvgIcon height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
-                                            </SvgIcon>
-                                        </IndicatorContainer>
-                                    </ControlContainer>
+                                        </div>
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                top: '100%',
+                                                left: 0,
+                                                visibility: showDropdownn ? 'visible' : 'hidden',
+                                                zIndex: 1,
+                                                background: 'white',
+                                                border: '1px solid #ccc',
+                                                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                                borderRadius: '4px',
+                                                marginTop: '4px',
+                                                width: '100%',
+                                                maxHeight: '200px',
+                                                overflowY: 'auto'
+                                            }}
+                                        >
+                                            {showDropdownn &&
+                                                states.map((state, index) => (
+                                                    <div key={index} onClick={() => setSelectedLocation(state)}>
+                                                        {state}
+                                                    </div>
+                                                ))}
+                                        </div>
+                                    </div>
                                 </StyledContainer>
                             </div>
                             <div className="form-group">
                                 <label className="text-bold">Nơi nhận *</label>
                                 <StyledContainerr>
-                                    <InvisibleTextSpann aria-live="polite" aria-atomic="false" aria-relevant="additions text"></InvisibleTextSpann>
-                                    <ControlContainerr>
-                                        <InputContainerr>
-                                            <div className="css-1wa3eu0-placeholder"></div>
-                                            <div
-                                                className="css-1g6gooi"
-                                                style={{ position: 'relative', cursor: 'pointer' }}
-                                                onClick={toggleDropdown} // Show dropdown when clicking anywhere in the container
+                                    <div className="css-1wa3eu0-placeholder"></div>
+                                    <div
+                                        className="css-1g6gooi"
+                                        style={{ position: 'relative', cursor: 'pointer' }}
+                                        onClick={toggleDropdown}
+                                    >
+                                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                                            <select
+                                                id="react-select-receiveLocation-input"
+                                                tabIndex="0"
+                                                aria-autocomplete="list"
+                                                style={{
+                                                    flex: 1,
+                                                    background: 'none',
+                                                    border: 'none',
+                                                    fontSize: 'inherit',
+                                                    opacity: '0.7',
+                                                    outline: 'none',
+                                                    padding: '0',
+                                                    color: 'inherit'
+                                                }}
+                                                onChange={(e) => handleLocationChange(e.target.value)}
+                                                value={selectedLocation}
                                             >
-                                                <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                    <select
-                                                        id="react-select-receiveLocation-input"
-                                                        tabIndex="0"
-                                                        aria-autocomplete="list"
-                                                        style={{
-                                                            flex: 1,
-                                                            background: 'none',
-                                                            border: 'none',
-                                                            fontSize: 'inherit',
-                                                            opacity: '0.7',
-                                                            outline: 'none',
-                                                            padding: '0',
-                                                            color: 'inherit'
-                                                        }}
-                                                        onChange={(e) => handleLocationChange(e.target.value)}
-                                                        value={selectedLocation}
-                                                    >
-                                                        <option value=""></option>
-                                                        {provinces.map((province, index) => (
-                                                            <option key={index} value={province}>
-                                                                {province}
-                                                            </option>
-                                                        ))}
-                                                    </select>
+                                                <option value=""></option>
+                                                {provinces.map((province, index) => (
+                                                    <option key={index} value={province}>
+                                                        {province}
+                                                    </option>
+                                                ))}
+                                            </select>
 
-                                                    <div
-                                                        style={{
-                                                            cursor: 'pointer',
-                                                            marginLeft: '10px' // Adjust spacing as needed
-                                                        }}
-                                                    >
-                                                        <SvgIcon height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-                                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
-                                                        </SvgIcon>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    style={{
-                                                        position: 'absolute',
-                                                        top: '100%',
-                                                        left: 0,
-                                                        visibility: showDropdown ? 'visible' : 'hidden', // Show/hide dropdown based on state
-                                                        zIndex: 1,
-                                                        background: 'white',
-                                                        border: '1px solid #ccc',
-                                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                                        borderRadius: '4px',
-                                                        marginTop: '4px',
-                                                        width: '100%',
-                                                        maxHeight: '200px',
-                                                        overflowY: 'auto'
-                                                    }}
-                                                >
-                                                    {/* Dropdown options */}
-                                                    {showDropdown &&
-                                                        provinces.map((province, index) => (
-                                                            <div key={index} onClick={() => setSelectedLocation(province)}>
-                                                                {province}
-                                                            </div>
-                                                        ))}
-                                                </div>
+                                            <div
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    marginLeft: '10px'
+                                                }}
+                                            >
+                                                <SvgIcon height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                    <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                </SvgIcon>
                                             </div>
-                                        </InputContainerr>
-                                    </ControlContainerr>
+                                        </div>
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                top: '100%',
+                                                left: 0,
+                                                visibility: showDropdown ? 'visible' : 'hidden',
+                                                zIndex: 1,
+                                                background: 'white',
+                                                border: '1px solid #ccc',
+                                                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                                borderRadius: '4px',
+                                                marginTop: '4px',
+                                                width: '100%',
+                                                maxHeight: '200px',
+                                                overflowY: 'auto'
+                                            }}
+                                        >
+                                            {showDropdown &&
+                                                provinces.map((province, index) => (
+                                                    <div key={index} onClick={() => setSelectedLocation(province)}>
+                                                        {province}
+                                                    </div>
+                                                ))}
+                                        </div>
+                                    </div>
                                 </StyledContainerr>
                             </div>
                             <div className="form-group">
