@@ -302,8 +302,8 @@ const Price = () => {
                                                             background: 'none',
                                                             border: 'none',
                                                             fontSize: 'inherit',
-                                                            opacity: '0.7', 
-                                                            outline: 'none', 
+                                                            opacity: '0.7',
+                                                            outline: 'none',
                                                             padding: '0',
                                                             color: 'inherit'
                                                         }}

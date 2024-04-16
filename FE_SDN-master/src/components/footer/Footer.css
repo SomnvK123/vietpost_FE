@@ -1,3 +1,19 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+
 .footer {
     background-color: #313b46;
     padding-top: 30px;
@@ -83,7 +99,7 @@
 
 @media(min-width: 768px) {
     .footer {
-        padding-top:60px;
+        padding-top: 60px;
         padding-bottom: 30px
     }
 
@@ -91,11 +107,34 @@
         margin-top: 0
     }
 
-    .footer .address,.footer .links-list {
+    .footer .address,
+    .footer .links-list {
         padding-top: 25px
     }
 
     .footer .address p {
         margin-bottom: 1rem
     }
+}
+
+.col-12,
+.col-sm-8,
+.col-md-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.offset-sm-2 {
+    margin-left: 16.6666666667%
+}
+
+.offset-md-0 {
+    margin-left: 0
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none
 }

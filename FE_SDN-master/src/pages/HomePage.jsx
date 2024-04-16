@@ -4,6 +4,7 @@ import Header from "../components/header/Header";
 import Carousel from "../components/slider/Carousel";
 import About from "../components/home_about/About";
 import Info from "../components/home_info/Info";
+import Lookup from "../components/home_po_lookup/Lookup";
 import Express from "../components/home_express/Express";
 import Price from "../components/home_price/Price";
 import Footerr from "../components/footer/Footer";
@@ -20,7 +21,8 @@ const HomePage = () => {
                             <Carousel />
                             <About />
                             <Info />
-                            <div class="home-po-lookup-section">
+                            <Lookup />
+                            {/* <div class="home-po-lookup-section">
                                 <div class="anchor" id="locations"></div>
                                 <div class="container">
                                     <div class="row">
@@ -438,7 +440,7 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <Express />
                             <Price />
                             <div class="home-delivery-section">
