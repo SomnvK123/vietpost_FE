@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import styled from '@emotion/styled';
 
@@ -150,7 +150,46 @@ const IndicatorSeparatorr = styled.span`
     box-sizing: border-box;
 `;
 
+const provinces = [
+    { id: 1, name: 'Hà Nội' },
+    { id: 2, name: 'Hồ Chí Minh' },
+    { id: 3, name: 'Đà Nẵng' },
+];
+
+const districtsByProvince = {
+    'Hà Nội': ['Ba Đình', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Đống Đa', 'Tây Hồ'],
+    'Hồ Chí Minh': ['Quận 1', 'Quận 3', 'Quận 5', 'Quận 10', 'Quận Bình Thạnh'],
+    'Đà Nẵng': ['Quận Hải Châu', 'Quận Thanh Khê', 'Quận Sơn Trà', 'Quận Ngũ Hành Sơn', 'Quận Liên Chiểu'],
+};
+
 const Lookup = () => {
+    const [selectedProvince, setSelectedProvince] = useState('');
+    const [selectedDistrict, setSelectedDistrict] = useState('');
+    const [districts, setDistricts] = useState([]);
+    const [showDropdown, setShowDropdown] = useState(false);
+    const [showDropdownn, setShowDropdownn] = useState(false);
+
+    const toggleDropdownn = () => {
+        setShowDropdownn(!showDropdownn);
+    };
+
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    };
+
+    const handleProvinceChange = (event) => {
+        const province = event.target.value;
+        setSelectedProvince(province);
+        const districts = districtsByProvince[province] || [];
+        setDistricts(districts);
+
+        if (districts.length > 0) {
+            setSelectedDistrict(districts[0]);
+        } else {
+            setSelectedDistrict('');
+        }
+    };
+
     return (
         <div className="home-po-lookup-section">
             <div className="anchor" id="locations"></div>
@@ -171,39 +210,75 @@ const Lookup = () => {
                                     <A11yText aria-live="polite" aria-atomic="false" aria-relevant="additions text"></A11yText>
                                     <Control>
                                         <div>
-                                            <Placeholder>Chọn Bang/Lãnh thổ</Placeholder>
-                                            <div>
-                                                <input
-                                                    type="text"
-                                                    autoCapitalize="none"
-                                                    autoComplete="off"
-                                                    autoCorrect="off"
-                                                    id="react-select-region-input"
-                                                    spellCheck="false"
-                                                    tabIndex="0"
-                                                    value=""
-                                                    aria-autocomplete="list"
+                                            {selectedProvince ? null : (
+                                                <Placeholder>Chọn Bang/Lãnh thổ</Placeholder>
+                                            )}
+                                            <div style={{ position: 'relative', cursor: 'pointer' }}>
+                                                <select
+                                                    id="react-select-province-input"
+                                                    value={selectedProvince}
+                                                    onChange={handleProvinceChange}
+                                                    onClick={toggleDropdown}
+                                                    onBlur={() => setShowDropdown(false)}
                                                     style={{
-                                                        boxSizing: 'content-box',
-                                                        width: '1px',
+                                                        width: '100%', // Kéo dài đến hết trường
                                                         background: 'none',
                                                         border: '0',
                                                         fontSize: 'inherit',
                                                         opacity: '1',
                                                         outline: 'none',
                                                         padding: '0',
-                                                        color: 'inherit'
+                                                        color: 'inherit',
+                                                        appearance: 'none', // Xóa dấu nhọn của select
+                                                        boxSizing: 'border-box' // Kéo dài đến hết trường
                                                     }}
-                                                />
-                                                <div></div>
+                                                >
+                                                    {selectedProvince ? null : <option value=""></option>}
+                                                    {provinces.map((province) => (
+                                                        <option key={province.id} value={province.name}>{province.name}</option>
+                                                    ))}
+                                                </select>
+                                                <div
+                                                    style={{
+                                                        position: 'absolute',
+                                                        top: '100%',
+                                                        left: 0,
+                                                        visibility: showDropdown ? 'visible' : 'hidden',
+                                                        zIndex: 1,
+                                                        background: 'white',
+                                                        border: '1px solid #ccc',
+                                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                                        borderRadius: '4px',
+                                                        marginTop: '4px',
+                                                        width: '100%',
+                                                        maxHeight: '200px',
+                                                        overflowY: 'auto'
+                                                    }}
+                                                >
+                                                    {showDropdown &&
+                                                        provinces.map((province) => (
+                                                            <div key={province.id} onClick={() => setSelectedProvince(province.name)}>
+                                                                {province.name}
+                                                            </div>
+                                                        ))
+                                                    }
+                                                </div>
+                                                <div
+                                                    style={{
+                                                        position: 'absolute',
+                                                        top: '50%',
+                                                        right: 0,
+                                                        transform: 'translateY(-50%)', // Đưa dấu nhọn xuống giữa trường
+                                                        cursor: 'pointer',
+                                                        marginRight: '-380px'
+                                                    }}
+                                                >
+                                                    <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" style={{ fill: 'rgba(0, 0, 0, 0.5)' }}>
+                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                    </IndicatorSvg>
+                                                </div>
                                             </div>
                                         </div>
-                                        <IndicatorSeparator />
-                                        <IndicatorContainer aria-hidden="true">
-                                            <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
-                                            </IndicatorSvg>
-                                        </IndicatorContainer>
                                     </Control>
                                 </Containerr>
                             </Form.Group>
@@ -212,60 +287,76 @@ const Lookup = () => {
                                 <Containerx>
                                     <A11yTextt></A11yTextt>
                                     <Controll>
-                                        <Placeholderr>Chọn Vùng đô thị</Placeholderr>
+                                        <Placeholderr>{selectedDistrict ? null : 'Chọn Vùng đô thị'}</Placeholderr>
                                         <div className="css-1g6gooi">
-                                            <div className="" style={{ display: 'inline-block' }}>
-                                                <input
-                                                    type="text"
-                                                    autoCapitalize="none"
-                                                    autoComplete="off"
-                                                    autoCorrect="off"
-                                                    id="react-select-metroArea-input"
-                                                    spellCheck="false"
-                                                    tabIndex="0"
-                                                    value=""
-                                                    aria-autocomplete="list"
+                                            <div className="" style={{ display: 'inline-block', position: 'relative', cursor: 'pointer' }}>
+                                                <select
+                                                    id="react-select-district-input"
+                                                    value={selectedDistrict}
+                                                    onChange={(e) => setSelectedDistrict(e.target.value)}
+                                                    onClick={toggleDropdownn}
+                                                    onBlur={() => setShowDropdownn(false)}
                                                     style={{
                                                         boxSizing: 'content-box',
-                                                        width: '1px',
+                                                        width: 'auto',
                                                         background: 'none',
-                                                        border: 'none',
+                                                        border: '0',
                                                         fontSize: 'inherit',
                                                         opacity: '1',
                                                         outline: 'none',
                                                         padding: '0',
                                                         color: 'inherit'
                                                     }}
-                                                />
+                                                >
+                                                    {selectedDistrict ? null : <option value=""></option>}
+                                                    {districts.map((district, index) => (
+                                                        <option key={index} value={district}>{district}</option>
+                                                    ))}
+                                                </select>
                                                 <div
                                                     style={{
                                                         position: 'absolute',
-                                                        top: '0',
-                                                        left: '0',
-                                                        visibility: 'hidden',
-                                                        height: '0',
-                                                        overflow: 'scroll',
-                                                        whiteSpace: 'pre'
+                                                        top: '100%',
+                                                        left: 0,
+                                                        visibility: showDropdownn ? 'visible' : 'hidden',
+                                                        zIndex: 1,
+                                                        background: 'white',
+                                                        border: '1px solid #ccc',
+                                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                                        borderRadius: '4px',
+                                                        marginTop: '4px',
+                                                        width: '100%',
+                                                        maxHeight: '200px',
+                                                        overflowY: 'auto'
                                                     }}
-                                                ></div>
+                                                >
+                                                    {showDropdownn &&
+                                                        districts.map((district, index) => (
+                                                            <div key={index} onClick={() => setSelectedDistrict(district)}>
+                                                                {district}
+                                                            </div>
+                                                        ))
+                                                    }
+                                                </div>
                                             </div>
                                         </div>
                                         <IndicatorContainerr aria-hidden="true">
                                             <IndicatorSeparatorr></IndicatorSeparatorr>
-                                            <svg
-                                                height="20"
-                                                width="20"
-                                                viewBox="0 0 20 20"
-                                                aria-hidden="true"
-                                                focusable="false"
-                                                className="css-8mmkcg"
+                                            <div
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    marginLeft: '10px'
+                                                }}
                                             >
-                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
-                                            </svg>
+                                                <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                    <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                </IndicatorSvg>
+                                            </div>
                                         </IndicatorContainerr>
                                     </Controll>
                                 </Containerx>
                             </Form.Group>
+
                             <div className="po-list p-3 mb-3 mb-md-4 mb-lg-5">
                                 <div className="text-bold text-uppercase">Vietpost</div>
                                 <div className="mt-2">Địa điểm pick hàng</div>
