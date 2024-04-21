@@ -334,13 +334,13 @@ const Lookup = () => {
                                                         overflowY: 'auto'
                                                     }}
                                                 >
-                                                    {showDropdownn &&
+                                                    {/* {showDropdownn &&
                                                         districts.map((district, index) => (
                                                             <div key={index} onClick={() => setSelectedDistrict(district)}>
                                                                 {district}
                                                             </div>
                                                         ))
-                                                    }
+                                                    } */}
                                                 </div>
                                             </div>
                                         </div>
