@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import styled from '@emotion/styled';
+import './Lookup.css';
 
 const Containerr = styled.div`
     position: relative;
