@@ -211,12 +211,12 @@ const Lookup = () => {
                                 <Form.Label>Bang/Lãnh thổ</Form.Label>
                                 <Containerr>
                                     <A11yText aria-live="polite" aria-atomic="false" aria-relevant="additions text"></A11yText>
-                                    <Control>
-                                        <div>
+                                    <Control style={{ width: '100%', position: 'relative' }}> {/* Đảm bảo Control có chiều rộng đầy đủ và vị trí tương đối */}
+                                        <div style={{ cursor: 'pointer', width: '100%' }}>
                                             {selectedProvince ? null : (
-                                                <Placeholder>Chọn Bang/Lãnh thổ</Placeholder>
+                                                <Placeholder>Chọn Bang/Lãnh thổ</Placeholder> // Placeholder cho Bang/Lãnh thổ
                                             )}
-                                            <div style={{ position: 'relative', cursor: 'pointer' }}>
+                                            <div style={{ position: 'relative', cursor: 'pointer', width: '100%' }}>
                                                 <select
                                                     id="react-select-province-input"
                                                     value={selectedProvince}
@@ -225,7 +225,7 @@ const Lookup = () => {
                                                     onBlur={() => setShowDropdown(false)}
                                                     style={{
                                                         boxSizing: 'content-box',
-                                                        width: 'auto',
+                                                        width: '100%', // Chiều rộng đầy đủ
                                                         background: 'none',
                                                         border: '0',
                                                         fontSize: 'inherit',
@@ -233,8 +233,8 @@ const Lookup = () => {
                                                         outline: 'none',
                                                         padding: '0',
                                                         color: 'inherit',
-                                                        overflowY: 'auto'
-                                                        // appearance: 'none',
+                                                        overflowY: 'auto',
+                                                        appearance: 'none', // Thêm thuộc tính này để ẩn dấu nhọn mặc định của select
                                                     }}
                                                 >
                                                     {selectedProvince ? null : <option value="" style={{ width: '100%' }}></option>}
@@ -242,22 +242,15 @@ const Lookup = () => {
                                                         <option key={province.id} value={province.name}>{province.name}</option>
                                                     ))}
                                                 </select>
-                                            </div>
-                                        </div>
-                                        <IndicatorContainer aria-hidden="true">
-                                            <IndicatorSeparator></IndicatorSeparator>
-                                            <div
-                                                style={{
-                                                    cursor: 'pointer',
-                                                    marginLeft: '10px'
-                                                }}
-                                            >
-                                                <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                {/* Đặt IndicatorSvg ngay sau select để dễ dàng điều chỉnh vị trí */}
+                                                <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
                                                     <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
                                                 </IndicatorSvg>
                                             </div>
-                                        </IndicatorContainer>
+                                        </div>
+                                        {/* Loại bỏ IndicatorContainer để tránh trùng lặp */}
                                     </Control>
+
                                 </Containerr>
                             </Form.Group>
                             <Form.Group>
@@ -299,7 +292,7 @@ const Lookup = () => {
                                             <div
                                                 style={{
                                                     cursor: 'pointer',
-                                                    marginLeft: '10px'
+                                                    marginLeft: '-20px'
                                                 }}
                                             >
                                                 <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
