@@ -9,12 +9,8 @@ import './Header.css';
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const handleToggle = (isOpen) => {
-        if (isOpen === undefined) {
-            setIsDropdownOpen(!isDropdownOpen);
-        } else {
-            setIsDropdownOpen(isOpen);
-        }
+    const handleToggle = () => {
+        setIsDropdownOpen(!isDropdownOpen);
     };
 
     return (
@@ -58,9 +54,9 @@ function Header() {
                                                         Hotline
                                                     </Dropdown.Toggle>
                                                     <Dropdown.Menu>
-                                                        <Dropdown.Item href="#action/3.1">0987654321</Dropdown.Item>
-                                                        <Dropdown.Item href="#action/3.2">0123456789</Dropdown.Item>
-                                                        <Dropdown.Item href="#action/3.3">Hotline 3</Dropdown.Item>
+                                                        <Dropdown.Item href="tel:0987654321">0987654321</Dropdown.Item>
+                                                        <Dropdown.Item href="tel:0123456789">0123456789</Dropdown.Item>
+                                                        <Dropdown.Item href="#">Hotline 3</Dropdown.Item>
                                                     </Dropdown.Menu>
                                                 </Dropdown>
                                             </div>
@@ -114,13 +110,13 @@ function Header() {
                                 <a className="btn-icon ml-4" href="#">
                                     <svg id="location_svg__Layer_1" x="0" y="0" viewBox="0 0 21.29 22.6">
                                         <style>{`.location_svg__st0 { fill: #233973 } .location_svg__st2 { fill: #0a51a0 }`}</style>
-                                        <path class="location_svg__st0"
+                                        <path className="location_svg__st0"
                                             d="M5.75 6.91a.407.407 0 00-.4-.02L.23 9.39c-.14.06-.23.21-.23.36v12.43c0 .14.07.28.19.35a.428.428 0 00.4.02l5.12-2.5c.14-.07.23-.21.23-.37V7.26c0-.14-.07-.28-.19-.35zM15.98 6.91a.407.407 0 00-.4-.02l-5.12 2.5c-.14.07-.23.21-.23.37v12.43c0 .14.07.28.19.35a.428.428 0 00.4.02l5.12-2.5c.14-.07.23-.21.23-.37V7.26c0-.14-.07-.28-.19-.35z">
                                         </path>
                                         <path
                                             d="M15.37 4.7c0-2.6-2.1-4.7-4.7-4.7s-4.7 2.1-4.7 4.7c0 0-.12 4.73 4.7 9.55 4.82-4.82 4.7-9.55 4.7-9.55z"
                                             fill="#fbb042"></path>
-                                        <path class="location_svg__st2"
+                                        <path className="location_svg__st2"
                                             d="M21.06 9.38l-5.12-2.5a.392.392 0 00-.18-.04v13.31l4.93 2.41a.428.428 0 00.4-.02.42.42 0 00.19-.35V9.75c.01-.15-.08-.3-.22-.37zM10.64 9.29l-4.93-2.4c-.02-.01-.05-.02-.07-.03v13.26l4.82 2.44c.06.03.12.04.18.04V9.29z">
                                         </path>
                                         <path d="M10.74 0h-.07c-2.6 0-4.7 2.1-4.7 4.7 0 0-.12 4.73 4.7 9.55l.07-.07V0z"

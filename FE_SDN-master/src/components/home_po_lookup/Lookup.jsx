@@ -158,7 +158,7 @@ const provinces = [
 ];
 
 const districtsByProvince = {
-    'Hà Nội': ['Ba Đình', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Đống Đa', 'Tây Hồ', 'Quận Hải Châu', 'Quận Thanh Khê', 'Quận Sơn Trà', 'Quận Ngũ Hành Sơn', 'Quận Liên Chiểu'],
+    'Hà Nội': ['Ba Đình', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Đống Đa', 'Tây Hồ'],
     'Hồ Chí Minh': ['Quận 1', 'Quận 3', 'Quận 5', 'Quận 10', 'Quận Bình Thạnh'],
     'Đà Nẵng': ['Quận Hải Châu', 'Quận Thanh Khê', 'Quận Sơn Trà', 'Quận Ngũ Hành Sơn', 'Quận Liên Chiểu'],
 };
@@ -168,11 +168,6 @@ const Lookup = () => {
     const [selectedDistrict, setSelectedDistrict] = useState('');
     const [districts, setDistricts] = useState([]);
     const [showDropdown, setShowDropdown] = useState(false);
-    const [showDropdownn, setShowDropdownn] = useState(false);
-
-    const toggleDropdownn = () => {
-        setShowDropdownn(!showDropdownn);
-    };
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
@@ -190,8 +185,6 @@ const Lookup = () => {
             setSelectedDistrict(''); // nếu rỗng thì xóa.....
         }
     };
-
-    const MAX_ITEMS = 5;
 
     return (
         <div className="home-po-lookup-section">

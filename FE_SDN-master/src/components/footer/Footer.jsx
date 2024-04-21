@@ -21,33 +21,33 @@ const Footer = () => {
                         <div className="heading">Chính sách</div>
                         <ul className="list-unstyled links-list">
                             <li>
-                                <a class="gf-link" href="https://vietpost.com.au/help/chinh-sach-den-bu">
+                                <a className="gf-link" href="https://vietpost.com.au/help/chinh-sach-den-bu">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Chính sách đền bù</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="https://www.shirogane.vn">
+                                <a className="gf-link" href="https://www.shirogane.vn">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Vận chuyển Việt - Úc</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link"
+                                <a className="gf-link"
                                     href="https://vietpost.com.au/help/huong-dan-dang-ky-tai-khoan-tren-vietpostcomau">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Hướng dẫn đăng ký tài khoản</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link"
+                                <a className="gf-link"
                                     href="https://vietpost.com.au/help/huong-dan-tao-van-don-tai-vietpostcomau">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Hướng dẫn tạo vận đơn</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="https://vietpost.com.au/help/quy-dinh-chung">
+                                <a className="gf-link" href="https://vietpost.com.au/help/quy-dinh-chung">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Chính sách riêng tư</span>
                                 </a>
@@ -58,25 +58,25 @@ const Footer = () => {
                         <div className="heading">Về chúng tôi</div>
                         <ul className="list-unstyled links-list">
                             <li>
-                                <a class="gf-link" href="https://zalo.me/g/zaqhuu493">
+                                <a className="gf-link" href="https://zalo.me/g/zaqhuu493">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Group hỗ trợ zalo</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="https://tocamart.com">
+                                <a className="gf-link" href="https://tocamart.com">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Dịch vụ Order hàng Úc</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="/#how-it-works">
+                                <a className="gf-link" href="/#how-it-works">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Phương thức hoạt động</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="gf-link" href="/#about-us">
+                                <a className="gf-link" href="/#about-us">
                                     <img src="https://vietpost.com.au/_next/static/right-angle-c4b7d5566fb4b356822df3dd87556b1f.svg" alt="" />
                                     <span>Giới thiệu về Vietpost</span>
                                 </a>
