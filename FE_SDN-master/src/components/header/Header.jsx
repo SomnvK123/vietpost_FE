@@ -9,6 +9,14 @@ import './Header.css';
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+    const handleToggle = (isOpen) => {
+        if (isOpen === undefined) {
+            setIsDropdownOpen(!isDropdownOpen);
+        } else {
+            setIsDropdownOpen(isOpen);
+        }
+    };
+
     return (
         <>
             <header id="header" className="header">
@@ -44,19 +52,15 @@ function Header() {
                                             <div className="d-xl-none nav-item">
                                                 <Nav.Link className="nav-link d-xl-none" href="#">Hướng dẫn</Nav.Link>
                                             </div>
-                                            <div className="d-xl-none nav-item">
-                                                <Dropdown show={isDropdownOpen} onHide={() => setIsDropdownOpen(false)}>
-                                                    <Dropdown.Toggle
-                                                        id="nav-home-dropdown"
-                                                        role="button"
-                                                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                                    >
+                                            <div className="d-xl-none nav-item dropdown">
+                                                <Dropdown show={isDropdownOpen} onToggle={handleToggle}>
+                                                    <Dropdown.Toggle as="a" id="nav-home-dropdown" className="dropdown-toggle nav-link" role="button">
                                                         Hotline
                                                     </Dropdown.Toggle>
                                                     <Dropdown.Menu>
-                                                        <Dropdown.Item>0987654321</Dropdown.Item>
-                                                        <Dropdown.Item>0123456789</Dropdown.Item>
-                                                        <Dropdown.Item>Hotline 3</Dropdown.Item>
+                                                        <Dropdown.Item href="#action/3.1">0987654321</Dropdown.Item>
+                                                        <Dropdown.Item href="#action/3.2">0123456789</Dropdown.Item>
+                                                        <Dropdown.Item href="#action/3.3">Hotline 3</Dropdown.Item>
                                                     </Dropdown.Menu>
                                                 </Dropdown>
                                             </div>
