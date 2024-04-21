@@ -158,7 +158,7 @@ const provinces = [
 ];
 
 const districtsByProvince = {
-    'Hà Nội': ['Ba Đình', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Đống Đa', 'Tây Hồ'],
+    'Hà Nội': ['Ba Đình', 'Hoàn Kiếm', 'Hai Bà Trưng', 'Đống Đa', 'Tây Hồ', 'Quận Hải Châu', 'Quận Thanh Khê', 'Quận Sơn Trà', 'Quận Ngũ Hành Sơn', 'Quận Liên Chiểu'],
     'Hồ Chí Minh': ['Quận 1', 'Quận 3', 'Quận 5', 'Quận 10', 'Quận Bình Thạnh'],
     'Đà Nẵng': ['Quận Hải Châu', 'Quận Thanh Khê', 'Quận Sơn Trà', 'Quận Ngũ Hành Sơn', 'Quận Liên Chiểu'],
 };
@@ -191,6 +191,8 @@ const Lookup = () => {
         }
     };
 
+    const MAX_ITEMS = 5;
+
     return (
         <div className="home-po-lookup-section">
             <div className="anchor" id="locations"></div>
@@ -222,7 +224,8 @@ const Lookup = () => {
                                                     onClick={toggleDropdown}
                                                     onBlur={() => setShowDropdown(false)}
                                                     style={{
-                                                        width: '100%',
+                                                        boxSizing: 'content-box',
+                                                        width: 'auto',
                                                         background: 'none',
                                                         border: '0',
                                                         fontSize: 'inherit',
@@ -230,8 +233,8 @@ const Lookup = () => {
                                                         outline: 'none',
                                                         padding: '0',
                                                         color: 'inherit',
+                                                        overflowY: 'auto'
                                                         // appearance: 'none',
-                                                        boxSizing: '100%'
                                                     }}
                                                 >
                                                     {selectedProvince ? null : <option value="" style={{ width: '100%' }}></option>}
@@ -239,31 +242,6 @@ const Lookup = () => {
                                                         <option key={province.id} value={province.name}>{province.name}</option>
                                                     ))}
                                                 </select>
-                                                <div
-                                                    style={{
-                                                        position: 'absolute',
-                                                        top: '100%',
-                                                        left: 0,
-                                                        visibility: showDropdown ? 'visible' : 'hidden',
-                                                        zIndex: 1,
-                                                        background: 'white',
-                                                        border: '1px solid #ccc',
-                                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                                        borderRadius: '4px',
-                                                        marginTop: '4px',
-                                                        width: '100%',
-                                                        maxHeight: '200px',
-                                                        overflowY: 'auto'
-                                                    }}
-                                                >
-                                                    {/* {showDropdown &&
-                                                        provinces.map((province) => (
-                                                            <div key={province.id} onClick={() => setSelectedProvince(province.name)}>
-                                                                {province.name}
-                                                            </div>
-                                                        ))
-                                                    } */}
-                                                </div>
                                             </div>
                                         </div>
                                         <IndicatorContainer aria-hidden="true">
@@ -305,7 +283,8 @@ const Lookup = () => {
                                                         opacity: '1',
                                                         outline: 'none',
                                                         padding: '0',
-                                                        color: 'inherit'
+                                                        color: 'inherit',
+                                                        overflowY: 'auto'
                                                     }}
                                                 >
                                                     {selectedDistrict ? null : <option value=""></option>}
@@ -313,31 +292,6 @@ const Lookup = () => {
                                                         <option key={index} value={district}>{district}</option>
                                                     ))}
                                                 </select>
-                                                <div
-                                                    style={{
-                                                        position: 'absolute',
-                                                        top: '100%',
-                                                        left: 0,
-                                                        visibility: showDropdownn ? 'visible' : 'hidden',
-                                                        zIndex: 1,
-                                                        background: 'white',
-                                                        border: '1px solid #ccc',
-                                                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                                        borderRadius: '4px',
-                                                        marginTop: '4px',
-                                                        width: '100%',
-                                                        maxHeight: '200px',
-                                                        overflowY: 'auto'
-                                                    }}
-                                                >
-                                                    {/* {showDropdownn &&
-                                                        districts.map((district, index) => (
-                                                            <div key={index} onClick={() => setSelectedDistrict(district)}>
-                                                                {district}
-                                                            </div>
-                                                        ))
-                                                    } */}
-                                                </div>
                                             </div>
                                         </div>
                                         <IndicatorContainerr aria-hidden="true">
