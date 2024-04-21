@@ -184,7 +184,9 @@ const Price = () => {
     const [errorMessage, setErrorMessage] = useState('');
 
     const calculatePrice = (weight, length, width, height) => {
-        return (parseFloat(weight) + parseFloat(length) + parseFloat(width) + parseFloat(height)) * 10;
+        const weightCoefficient = 6.5;
+        const dimensionCoefficient = 2;
+        return (parseFloat(weight) * weightCoefficient) + (parseFloat(length) + parseFloat(width) + parseFloat(height)) * dimensionCoefficient;
     };
 
     const handleCalculatePrice = () => {
