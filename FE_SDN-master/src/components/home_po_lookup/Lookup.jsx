@@ -52,12 +52,12 @@ const Placeholder = styled.div`
 `;
 
 const IndicatorSeparator = styled.span`
-    align-self: stretch;
-    background-color: hsl(0, 0%, 80%);
-    margin-bottom: 8px;
-    margin-top: 8px;
-    width: 1px;
-    box-sizing: border-box;
+align-self: stretch;
+background-color: hsl(0, 0%, 80%);
+margin-bottom: 8px;
+margin-top: 8px;
+width: 1px;
+box-sizing: border-box;
 `;
 
 const IndicatorContainer = styled.div`
@@ -178,16 +178,20 @@ const Lookup = () => {
     };
 
     const handleProvinceChange = (event) => {
-        const province = event.target.value;
-        setSelectedProvince(province);
-        const districts = districtsByProvince[province] || [];
-        setDistricts(districts);
+        const province = event.target.value; //lấy giá trị province
+        setSelectedProvince(province); // cập nhật giá trị biến
+        const districts = districtsByProvince[province] || []; //lấy danh sách districts từ province tương ứng
+        setDistricts(districts); // cập nhất giá trị biến
 
-        if (districts.length > 0) {
-            setSelectedDistrict(districts[0]);
+        if (districts.length > 0) { // ktra ko rỗng
+            setSelectedDistrict(districts[0]); // lấy districts đầu tiên
         } else {
-            setSelectedDistrict('');
+            setSelectedDistrict(''); // nếu rỗng thì xóa.....
         }
+    };
+
+    const handleInputClick = () => {
+        toggleDropdown();
     };
 
     return (
@@ -221,7 +225,7 @@ const Lookup = () => {
                                                     onClick={toggleDropdown}
                                                     onBlur={() => setShowDropdown(false)}
                                                     style={{
-                                                        width: '100%', // Kéo dài đến hết trường
+                                                        width: '100%',
                                                         background: 'none',
                                                         border: '0',
                                                         fontSize: 'inherit',
@@ -229,11 +233,11 @@ const Lookup = () => {
                                                         outline: 'none',
                                                         padding: '0',
                                                         color: 'inherit',
-                                                        appearance: 'none', // Xóa dấu nhọn của select
-                                                        boxSizing: 'border-box' // Kéo dài đến hết trường
+                                                        appearance: 'none',
+                                                        boxSizing: 'border-box'
                                                     }}
                                                 >
-                                                    {selectedProvince ? null : <option value=""></option>}
+                                                    {selectedProvince ? null : <option value="" style={{ width: '100%' }}></option>}
                                                     {provinces.map((province) => (
                                                         <option key={province.id} value={province.name}>{province.name}</option>
                                                     ))}
@@ -263,20 +267,20 @@ const Lookup = () => {
                                                         ))
                                                     }
                                                 </div>
-                                                <div
-                                                    style={{
-                                                        position: 'absolute',
-                                                        top: '50%',
-                                                        right: 0,
-                                                        transform: 'translateY(-50%)', // Đưa dấu nhọn xuống giữa trường
-                                                        cursor: 'pointer',
-                                                        marginRight: '-380px'
-                                                    }}
-                                                >
-                                                    <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" style={{ fill: 'rgba(0, 0, 0, 0.5)' }}>
-                                                        <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
-                                                    </IndicatorSvg>
-                                                </div>
+                                                <IndicatorContainer aria-hidden="true">
+                                                    <IndicatorSeparator></IndicatorSeparator>
+                                                    <div
+                                                        style={{
+                                                            marginLeft: '100px',
+                                                            cursor: 'pointer',
+                                                            transform: 'translateY(-90%)',
+                                                        }}
+                                                    >
+                                                        <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" style={{ fill: 'rgba(0, 0, 0, 0.5)' }}>
+                                                            <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                        </IndicatorSvg>
+                                                    </div>
+                                                </IndicatorContainer>
                                             </div>
                                         </div>
                                     </Control>
@@ -374,5 +378,6 @@ const Lookup = () => {
         </div>
     );
 };
+
 
 export default Lookup;
