@@ -211,7 +211,7 @@ const Lookup = () => {
                                 <Form.Label>Bang/Lãnh thổ</Form.Label>
                                 <Containerr>
                                     <A11yText aria-live="polite" aria-atomic="false" aria-relevant="additions text"></A11yText>
-                                    <Control style={{ width: '100%', position: 'relative' }}> {/* Đảm bảo Control có chiều rộng đầy đủ và vị trí tương đối */}
+                                    <Control style={{ width: '100%', position: 'relative', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
                                         <div style={{ cursor: 'pointer', width: '100%' }}>
                                             {selectedProvince ? null : (
                                                 <Placeholder>Chọn Bang/Lãnh thổ</Placeholder> // Placeholder cho Bang/Lãnh thổ
@@ -248,25 +248,30 @@ const Lookup = () => {
                                             </div>
                                         </div>
                                     </Control>
+                                    <IndicatorSeparator></IndicatorSeparator>
+                                    <IndicatorContainer></IndicatorContainer>
                                 </Containerr>
                             </Form.Group>
                             <Form.Group>
                                 <label>Vùng đô thị</label>
                                 <Containerx>
-                                    <A11yTextt></A11yTextt>
-                                    <Controll>
+                                    <A11yTextt aria-live="polite" aria-atomic="false" aria-relevant="additions text"></A11yTextt>
+                                    <Controll style={{ width: '100%', position: 'relative', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
                                         <Placeholderr>{selectedDistrict ? null : 'Chọn Vùng đô thị'}</Placeholderr>
-                                        <div className="css-1g6gooi">
-                                            <div className="" style={{ display: 'inline-block', position: 'relative', cursor: 'pointer' }}>
+                                        <div className="css-1g6gooi" style={{ cursor: 'pointer', width: '100%' }}>
+                                            {selectedDistrict ? null : (
+                                                <Placeholder>Chọn Vùng đô thị</Placeholder> // Placeholder cho Vùng đô thị
+                                            )}
+                                            <div style={{ position: 'relative', cursor: 'pointer', width: '100%' }}>
                                                 <select
                                                     id="react-select-district-input"
                                                     value={selectedDistrict}
                                                     onChange={(e) => setSelectedDistrict(e.target.value)}
-                                                    onClick={toggleDropdownn}
-                                                    onBlur={() => setShowDropdownn(false)}
+                                                    onClick={toggleDropdown}
+                                                    onBlur={() => setShowDropdown(false)}
                                                     style={{
                                                         boxSizing: 'content-box',
-                                                        width: 'auto',
+                                                        width: '100%', // Chiều rộng đầy đủ
                                                         background: 'none',
                                                         border: '0',
                                                         fontSize: 'inherit',
@@ -274,7 +279,8 @@ const Lookup = () => {
                                                         outline: 'none',
                                                         padding: '0',
                                                         color: 'inherit',
-                                                        overflowY: 'auto'
+                                                        overflowY: 'auto',
+                                                        appearance: 'none',
                                                     }}
                                                 >
                                                     {selectedDistrict ? null : <option value=""></option>}
@@ -282,25 +288,16 @@ const Lookup = () => {
                                                         <option key={index} value={district}>{district}</option>
                                                     ))}
                                                 </select>
-                                            </div>
-                                        </div>
-                                        <IndicatorContainerr aria-hidden="true">
-                                            <IndicatorSeparatorr></IndicatorSeparatorr>
-                                            <div
-                                                style={{
-                                                    cursor: 'pointer',
-                                                    marginLeft: '-20px'
-                                                }}
-                                            >
-                                                <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                <IndicatorSvg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
                                                     <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
                                                 </IndicatorSvg>
                                             </div>
-                                        </IndicatorContainerr>
+                                        </div>
                                     </Controll>
+                                    <IndicatorSeparatorr></IndicatorSeparatorr>
+                                    <IndicatorContainerr></IndicatorContainerr>
                                 </Containerx>
                             </Form.Group>
-
                             <div className="po-list p-3 mb-3 mb-md-4 mb-lg-5">
                                 <div className="text-bold text-uppercase">Vietpost</div>
                                 <div className="mt-2">Địa điểm pick hàng</div>
@@ -315,7 +312,7 @@ const Lookup = () => {
                     </div>
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 
