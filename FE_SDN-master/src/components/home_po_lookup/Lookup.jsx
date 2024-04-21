@@ -259,13 +259,13 @@ const Lookup = () => {
                                                         overflowY: 'auto'
                                                     }}
                                                 >
-                                                    {showDropdown &&
+                                                    {/* {showDropdown &&
                                                         provinces.map((province) => (
                                                             <div key={province.id} onClick={() => setSelectedProvince(province.name)}>
                                                                 {province.name}
                                                             </div>
                                                         ))
-                                                    }
+                                                    } */}
                                                 </div>
                                                 <IndicatorContainer aria-hidden="true">
                                                     <IndicatorSeparator></IndicatorSeparator>
