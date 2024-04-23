@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './Carousel.css';
+// import './Carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from 'react-slick';
 import { Container, Row, Col, Image } from 'react-bootstrap';

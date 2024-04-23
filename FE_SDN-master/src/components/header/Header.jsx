@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Navbar, Nav, Container, Dropdown } from 'react-bootstrap';
 import CustomToggle from '../Custome/CustomToggle';
-import './Header.css';
+// import './Header.css';
 
 
 function Header() {
