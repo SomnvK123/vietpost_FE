@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav, Container, Dropdown } from 'react-bootstrap';
 import CustomToggle from '../Custome/CustomToggle';
 import './Header.css';

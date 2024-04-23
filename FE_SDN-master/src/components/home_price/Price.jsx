@@ -176,17 +176,17 @@ const SvgIconn = styled.svg`
 `;
 
 const Price = () => {
-    const [weight, setWeight] = useState('');
-    const [length, setLength] = useState('');
-    const [width, setWidth] = useState('');
-    const [height, setHeight] = useState('');
-    const [estimatedPrice, setEstimatedPrice] = useState('');
+    const [weight, setWeight] = useState(0);
+    const [length, setLength] = useState(0);
+    const [width, setWidth] = useState(0);
+    const [height, setHeight] = useState(0);
+    const [estimatedPrice, setEstimatedPrice] = useState(0);
     const [errorMessage, setErrorMessage] = useState('');
 
     const calculatePrice = (weight, length, width, height) => {
         const weightCoefficient = 6.5;
         const dimensionCoefficient = 2;
-        return (parseFloat(weight) * weightCoefficient) + (parseFloat(length) + parseFloat(width) + parseFloat(height)) * dimensionCoefficient;
+        return (weight * weightCoefficient) + (length + width + height) * dimensionCoefficient; 
     };
 
     const handleCalculatePrice = () => {
